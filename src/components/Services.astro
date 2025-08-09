@@ -202,35 +202,27 @@
 </section>
 
 <style>
-  /* Custom cream colors */
-  .bg-cream-50 {
-    background-color: #fffbf0;
+  /* Service cards staggered animation */
+  .service-card:nth-child(1) {
+    animation: stagger-in 0.6s ease-out 0.1s both;
   }
   
-  .text-cream-50 {
-    color: #fffbf0;
+  .service-card:nth-child(2) {
+    animation: stagger-in 0.6s ease-out 0.2s both;
   }
   
-  /* Enhanced animations */
-  @keyframes fade-in {
-    from { 
-      opacity: 0; 
-      transform: translateY(20px); 
-    }
-    to { 
-      opacity: 1; 
-      transform: translateY(0); 
-    }
+  .service-card:nth-child(3) {
+    animation: stagger-in 0.6s ease-out 0.3s both;
   }
   
-  @keyframes fade-in-up {
-    from { 
-      opacity: 0; 
-      transform: translateY(40px); 
+  @keyframes stagger-in {
+    from {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
     }
-    to { 
-      opacity: 1; 
-      transform: translateY(0); 
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
     }
   }
   
@@ -245,80 +237,8 @@
     }
   }
   
-  @keyframes stagger-in {
-    from {
-      opacity: 0;
-      transform: translateY(30px) scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
-  }
-  
-  .animate-fade-in {
-    animation: fade-in 0.8s ease-out forwards;
-  }
-  
-  .animate-fade-in-up {
-    animation: fade-in-up 1s ease-out forwards;
-  }
-  
   .animate-pulse-subtle {
     animation: pulse-subtle 3s ease-in-out infinite;
-  }
-  
-  /* Service cards staggered animation */
-  .service-card:nth-child(1) {
-    animation: stagger-in 0.6s ease-out 0.1s both;
-  }
-  
-  .service-card:nth-child(2) {
-    animation: stagger-in 0.6s ease-out 0.2s both;
-  }
-  
-  .service-card:nth-child(3) {
-    animation: stagger-in 0.6s ease-out 0.3s both;
-  }
-  
-  /* Enhanced focus states */
-  .service-card:focus {
-    outline: none;
-    ring: 3px;
-    ring-color: rgba(245, 158, 11, 0.5);
-    ring-offset: 2px;
-    transform: translateY(-4px) scale(1.02);
-  }
-  
-  /* Ripple effect enhancement */
-  .group:hover .group-hover\:animate-bounce {
-    animation: bounce 1s ease-in-out infinite;
-  }
-  
-  /* Button focus enhancement */
-  button:focus, a:focus {
-    outline: none;
-  }
-  
-  /* Backdrop blur support */
-  @supports (backdrop-filter: blur(10px)) {
-    .backdrop-blur-sm {
-      backdrop-filter: blur(4px);
-    }
-  }
-  
-  /* Scroll-triggered animations */
-  @media (prefers-reduced-motion: no-preference) {
-    .service-card {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    
-    .service-card.in-view {
-      opacity: 1;
-      transform: translateY(0);
-      transition: all 0.6s ease-out;
-    }
   }
   
   /* Mobile optimizations */
@@ -329,23 +249,6 @@
     
     .service-card h3 {
       font-size: 1.125rem;
-    }
-  }
-  
-  /* High contrast mode support */
-  @media (prefers-contrast: high) {
-    .service-card {
-      border-width: 2px;
-      border-color: currentColor;
-    }
-  }
-  
-  /* Print styles */
-  @media print {
-    .service-card {
-      break-inside: avoid;
-      box-shadow: none;
-      border: 1px solid #000;
     }
   }
 </style>

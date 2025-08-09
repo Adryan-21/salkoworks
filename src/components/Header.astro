@@ -263,12 +263,6 @@
     }
   }
 
-  /* Enhanced Scroll Behavior */
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px; /* Accounting for sticky header */
-  }
-
   /* Enhanced Active Link Styling */
   .nav-link.active,
   .mobile-nav-link.active {
@@ -290,15 +284,6 @@
     background: #d97706;
     border-radius: 50%;
     box-shadow: 0 0 8px rgba(217, 119, 6, 0.6);
-  }
-
-  /* Focus Styles for Better Accessibility */
-  .nav-link:focus-visible,
-  .mobile-nav-link:focus-visible,
-  button:focus-visible,
-  a:focus-visible {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.5), 0 0 0 6px rgba(245, 158, 11, 0.2);
   }
 
   /* Enhanced Hover Effects */
@@ -344,41 +329,6 @@
     clip: auto;
     white-space: normal;
   }
-
-  /* Enhanced Color System */
-  .text-cream-50 {
-    color: #fffbf0;
-  }
-
-  .bg-cream-50 {
-    background-color: #fffbf0;
-  }
-
-  /* Reduced Motion Support */
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-    }
-
-    html {
-      scroll-behavior: auto;
-    }
-  }
-
-  /* High Contrast Mode Support */
-  @media (prefers-contrast: high) {
-    .nav-link,
-    .mobile-nav-link {
-      border: 2px solid;
-    }
-
-    .hamburger-line {
-      background: currentColor;
-    }
-  }
-
 
   /* Touch Device Optimizations */
   @media (hover: none) and (pointer: coarse) {

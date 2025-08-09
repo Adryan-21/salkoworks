@@ -646,70 +646,7 @@
 </script>
 
 <style>
-  /* Custom cream colors and enhanced color palette */
-  .bg-cream-50 {
-    background-color: #fffbf0;
-  }
-  
-  .text-cream-50 {
-    color: #fffbf0;
-  }
-  
-  /* Advanced Container and Grid Systems */
-  .max-w-8xl {
-    max-width: 90rem;
-  }
-  
-  .rounded-4xl {
-    border-radius: 2rem;
-  }
-  
-  /* Enhanced Glassmorphism Effects */
-  .glass-effect {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-  }
-  
-  /* Advanced Shadow System */
-  .shadow-3xl {
-    box-shadow: 
-      0 35px 60px -12px rgba(0, 0, 0, 0.15),
-      0 25px 25px -5px rgba(0, 0, 0, 0.1),
-      0 0 0 1px rgba(255, 255, 255, 0.05);
-  }
-  
-  /* Enhanced Grid Layout */
-  @supports (display: grid) {
-    .enhanced-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-    
-    @media (min-width: 1280px) {
-      .enhanced-grid {
-        grid-template-columns: 2fr 1fr;
-      }
-    }
-  }
-  
-  /* Advanced Typography */
-  .text-gradient {
-    background: linear-gradient(135deg, #92400e, #d97706, #f59e0b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-size: 200% 200%;
-    animation: gradient-shift 3s ease-in-out infinite;
-  }
-  
-  @keyframes gradient-shift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-  }
-  
-  /* Enhanced Form Styling */
+  /* Contact form specific styles */
   .form-field {
     position: relative;
     isolation: isolate;
@@ -732,56 +669,31 @@
     opacity: 1;
   }
   
-  /* Smooth scrolling with easing */
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    html {
-      scroll-behavior: smooth;
-    }
-  }
-  
-  /* Enhanced focus states with improved accessibility */
+  /* Enhanced form styling */
   input:focus, textarea:focus, select:focus {
     box-shadow: 
       0 0 0 4px rgba(245, 158, 11, 0.1),
       0 8px 25px -5px rgba(0, 0, 0, 0.1);
   }
   
-  /* Enhanced animations with performance optimization */
-  @keyframes fadeIn {
-    from { 
-      opacity: 0; 
-      transform: translateY(30px) scale(0.95); 
-    }
-    to { 
-      opacity: 1; 
-      transform: translateY(0) scale(1); 
-    }
+  /* Loading animations */
+  .animate-spin {
+    animation: spin 1s linear infinite;
   }
   
-  @keyframes slideInFromLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-50px) rotate(-5deg);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0) rotate(0deg);
-    }
+  /* Success and error animations */
+  .success-checkmark {
+    animation: bounceIn 0.8s ease-out;
   }
   
-  @keyframes slideInFromRight {
-    from {
-      opacity: 0;
-      transform: translateX(50px) rotate(5deg);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0) rotate(0deg);
-    }
+  .error-shake {
+    animation: shake 0.6s ease-in-out;
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-8px); }
+    20%, 40%, 60%, 80% { transform: translateX(8px); }
   }
   
   @keyframes bounceIn {
@@ -802,62 +714,7 @@
     }
   }
   
-  @keyframes pulse {
-    0%, 100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 0.8;
-      transform: scale(1.05);
-    }
-  }
-  
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-  
-  /* Optimized animation classes */
-  .animate-fade-in {
-    animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  }
-  
-  .animate-slide-in-left {
-    animation: slideInFromLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  }
-  
-  .animate-slide-in-right {
-    animation: slideInFromRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  }
-  
-  .animate-bounce-in {
-    animation: bounceIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  }
-  
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-  
-  /* Loading animations */
-  .animate-spin {
-    animation: spin 1s linear infinite;
-  }
-  
-  .animate-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  }
-  
-  @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-  
-  /* Advanced interaction effects */
+  /* Ripple effect */
   .ripple-effect {
     position: relative;
     overflow: hidden;
@@ -881,101 +738,21 @@
     height: 300px;
   }
   
-  /* Enhanced hover effects */
-  .hover-lift {
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Staggered animations for better UX */
+  .form-field:nth-child(1) { animation-delay: 0.1s; }
+  .form-field:nth-child(2) { animation-delay: 0.2s; }
+  .form-field:nth-child(3) { animation-delay: 0.3s; }
+  .form-field:nth-child(4) { animation-delay: 0.4s; }
+  .form-field:nth-child(5) { animation-delay: 0.5s; }
+  
+  /* Sticky sidebar */
+  .sticky-sidebar {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
   }
   
-  .hover-lift:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 
-      0 25px 50px -12px rgba(0, 0, 0, 0.25),
-      0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Advanced button states */
-  .btn-primary {
-    position: relative;
-    background: linear-gradient(135deg, #d97706, #ea580c);
-    transition: all 0.3s ease;
-  }
-  
-  .btn-primary:hover {
-    background: linear-gradient(135deg, #b45309, #dc2626);
-    transform: translateY(-2px);
-  }
-  
-  .btn-primary:active {
-    transform: translateY(0);
-  }
-  
-  /* Form enhancements */
-  .form-container {
-    position: relative;
-  }
-  
-  .form-container::before {
-    content: '';
-    position: absolute;
-    inset: -2px;
-    background: linear-gradient(45deg, #f59e0b, #ea580c, #f59e0b);
-    border-radius: inherit;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: -1;
-  }
-  
-  .form-container:focus-within::before {
-    opacity: 0.1;
-  }
-  
-  /* Mobile optimizations */
-  @media (max-width: 640px) {
-    .container {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-    
-    /* Optimize animations for mobile */
-    .animate-fade-in,
-    .animate-slide-in-left,
-    .animate-slide-in-right,
-    .animate-bounce-in {
-      animation-duration: 0.6s;
-    }
-  }
-  
-  /* Reduce motion preferences */
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-    }
-    
-    .animate-pulse,
-    .animate-float {
-      animation: none;
-    }
-  }
-  
-  /* High contrast mode support */
-  @media (prefers-contrast: high) {
-    .bg-cream-50 {
-      background-color: #ffffff;
-    }
-    
-    .border-amber-200 {
-      border-color: #000000;
-      border-width: 2px;
-    }
-    
-    .text-amber-900 {
-      color: #000000;
-    }
-  }
-    
-  /* Enhanced scrollbar with modern styling */
+  /* Enhanced scrollbar */
   ::-webkit-scrollbar {
     width: 12px;
   }
@@ -993,76 +770,6 @@
   
   ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(180deg, #b45309, #dc2626);
-  }
-  
-  /* Focus management */
-  .focus\\:ring-amber-500:focus {
-    --tw-ring-color: rgb(245 158 11 / var(--tw-ring-opacity));
-  }
-  
-  /* Enhanced transitions */
-  .transition-all {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
-  }
-  
-  /* Staggered animations for better UX */
-  .form-field:nth-child(1) { animation-delay: 0.1s; }
-  .form-field:nth-child(2) { animation-delay: 0.2s; }
-  .form-field:nth-child(3) { animation-delay: 0.3s; }
-  .form-field:nth-child(4) { animation-delay: 0.4s; }
-  .form-field:nth-child(5) { animation-delay: 0.5s; }
-  
-  /* Loading states */
-  .loading-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(4px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: inherit;
-    z-index: 50;
-  }
-  
-  /* Success and error animations */
-  .success-checkmark {
-    animation: bounceIn 0.8s ease-out;
-  }
-  
-  .error-shake {
-    animation: shake 0.6s ease-in-out;
-  }
-  
-  @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    10%, 30%, 50%, 70%, 90% { transform: translateX(-8px); }
-    20%, 40%, 60%, 80% { transform: translateX(8px); }
-  }
-  
-  /* Advanced layout utilities */
-  .sticky-sidebar {
-    position: sticky;
-    top: 2rem;
-    align-self: start;
-  }
-  
-  /* Performance optimizations */
-  .gpu-accelerated {
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  /* Custom scroll snap for better mobile experience */
-  .scroll-snap-container {
-    scroll-snap-type: y mandatory;
-  }
-  
-  .scroll-snap-item {
-    scroll-snap-align: start;
   }
 </style>
 
@@ -1467,7 +1174,7 @@
               input.value = value as string;
             }
           });
-          this.showToast('Przywrócono zapisane dane', 'info');
+          
         }
       } catch (error) {
         console.warn('Nie udało się załadować zapisanych danych:', error);

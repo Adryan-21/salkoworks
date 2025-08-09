@@ -128,27 +128,6 @@
           </div>
         </div>
 
-        <!-- Call to Action -->
-        <div class="pt-8">
-          <div class="bg-gradient-to-r from-amber-600 to-orange-500 rounded-2xl p-1 shadow-xl">
-            <div class="bg-white rounded-xl p-6">
-              <div class="text-center space-y-4">
-                <h3 class="text-xl font-bold text-amber-900">Gotowy na współpracę?</h3>
-                <p class="text-amber-700/80">Skontaktuj się ze mną i porozmawiajmy o Twoim projekcie</p>
-                <a 
-                  href="#kontakt" 
-                  class="inline-flex items-center bg-gradient-to-r from-amber-600 to-orange-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-amber-200/50 group"
-                  aria-label="Przejdź do sekcji kontakt"
-                >
-                  <span>Poznajmy się lepiej</span>
-                  <svg class="w-5 h-5 ml-3 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <!-- Image Column -->
@@ -240,38 +219,7 @@
 </section>
 
 <style>
-  /* Custom cream colors */
-  .bg-cream-50 {
-    background-color: #fffbf0;
-  }
-  
-  .text-cream-50 {
-    color: #fffbf0;
-  }
-  
-  /* Enhanced animations */
-  @keyframes float {
-    0%, 100% { 
-      transform: translateY(0px) rotate(3deg); 
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    }
-    50% { 
-      transform: translateY(-8px) rotate(3deg);
-      box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.35);
-    }
-  }
-  
-  @keyframes float-reverse {
-    0%, 100% { 
-      transform: translateY(0px) rotate(-3deg);
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    }
-    50% { 
-      transform: translateY(-8px) rotate(-3deg);
-      box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.35);
-    }
-  }
-  
+  /* Enhanced animations specific to About component */
   @keyframes float-slow {
     0%, 100% { 
       transform: translate(0px, 0px) scale(1);
@@ -322,48 +270,6 @@
     }
   }
   
-  @keyframes fade-slide-up {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fade-slide-left {
-    from {
-      opacity: 0;
-      transform: translateX(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes stagger-up {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Animation classes */
-  .animate-float {
-    animation: float 8s ease-in-out infinite;
-  }
-  
-  .animate-float-reverse {
-    animation: float-reverse 8s ease-in-out infinite;
-  }
-  
   .animate-float-slow {
     animation: float-slow 12s ease-in-out infinite;
   }
@@ -392,52 +298,6 @@
     transform: translateY(0);
   }
   
-  .animate-on-scroll[data-animation="fade-slide-up"].animate {
-    animation: fade-slide-up 0.8s ease-out forwards;
-  }
-  
-  .animate-on-scroll[data-animation="fade-slide-left"].animate {
-    animation: fade-slide-left 0.8s ease-out forwards;
-  }
-  
-  .animate-on-scroll[data-animation="stagger-up"] .feature-card {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .animate-on-scroll[data-animation="stagger-up"].animate .feature-card:nth-child(1) {
-    animation: stagger-up 0.6s ease-out 0.1s forwards;
-  }
-  
-  .animate-on-scroll[data-animation="stagger-up"].animate .feature-card:nth-child(2) {
-    animation: stagger-up 0.6s ease-out 0.2s forwards;
-  }
-  
-  .animate-on-scroll[data-animation="stagger-up"].animate .feature-card:nth-child(3) {
-    animation: stagger-up 0.6s ease-out 0.3s forwards;
-  }
-  
-  .animate-on-scroll[data-animation="stagger-up"].animate .feature-card:nth-child(4) {
-    animation: stagger-up 0.6s ease-out 0.4s forwards;
-  }
-  
-  /* Enhanced hover effects */
-  .feature-card {
-    cursor: pointer;
-    will-change: transform;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-  }
-  
-  .feature-card:hover {
-    transform: translateY(-2px) scale(1.02);
-  }
-  
-  .feature-card:focus {
-    transform: translateY(-2px) scale(1.02);
-  }
-  
   /* Parallax effect */
   .parallax-element {
     transform: translateZ(0);
@@ -445,85 +305,14 @@
     will-change: transform;
   }
   
-  /* Enhanced gradients */
-  .bg-gradient-to-br {
-    background-size: 150% 150%;
-    background-position: center;
-    transition: background-position 0.3s ease;
-  }
-  
-  .bg-gradient-to-br:hover {
-    background-position: top left;
-  }
-  
-  /* Custom shadows */
+  /* Enhanced shadows */
   .shadow-3xl {
     box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.35);
   }
   
-  /* Accessibility and reduced motion */
-  @media (prefers-reduced-motion: reduce) {
-    .animate-float,
-    .animate-float-reverse,
-    .animate-float-slow,
-    .animate-float-slow-reverse,
-    .animate-bounce-slow,
-    .animate-pulse-soft {
-      animation: none;
-    }
-    
-    .feature-card,
-    .parallax-element {
-      will-change: auto;
-    }
-    
-    .animate-on-scroll {
-      opacity: 1;
-      transform: none;
-      transition: none;
-    }
-  }
-  
-  /* High contrast mode support */
-  @media (prefers-contrast: high) {
-    .bg-white\/70,
-    .bg-white\/80,
-    .bg-white\/95 {
-      background-color: white;
-    }
-    
-    .border-amber-200\/40,
-    .border-amber-200\/50,
-    .border-amber-200\/60 {
-      border-color: #d97706;
-      border-width: 2px;
-    }
-  }
-  
-  /* Focus improvements */
-  .feature-card:focus-visible,
-  a:focus-visible,
-  button:focus-visible {
-    outline: 3px solid #d97706;
-    outline-offset: 2px;
-  }
-  
-  /* Performance optimizations */
-  .container {
-    contain: layout style;
-  }
-  
   /* Mobile optimizations */
   @media (max-width: 768px) {
-    .animate-on-scroll[data-animation="stagger-up"] .feature-card {
-      animation-delay: 0s !important;
-    }
-    
     .parallax-element {
-      transform: none;
-    }
-    
-    .feature-card:hover {
       transform: none;
     }
   }
@@ -550,36 +339,7 @@
       observer.observe(el);
     });
     
-    // Parallax effect for image
-    const parallaxElements = document.querySelectorAll('.parallax-element');
-    
-    const handleParallax = () => {
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        return;
-      }
-      
-      parallaxElements.forEach(element => {
-        const htmlElement = element as HTMLElement;
-        const rect = htmlElement.getBoundingClientRect();
-        const speed = 0.5;
-        const yPos = -(rect.top * speed);
-        htmlElement.style.transform = `translateY(${yPos}px)`;
-      });
-    };
-    
-    // Throttled scroll handler
-    let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          handleParallax();
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-    
-    window.addEventListener('scroll', handleScroll, { passive: true });
+   
     
     // Keyboard navigation for feature cards
     document.querySelectorAll('.feature-card').forEach(card => {
