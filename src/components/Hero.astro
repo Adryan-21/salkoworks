@@ -1,40 +1,78 @@
 ---
 ---
 
-<section id="home" class="min-h-screen bg-gradient-to-br from-cream-50 via-amber-50/50 to-orange-50/30 flex items-center py-16 lg:py-24" aria-labelledby="hero-title">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+<section id="home" class="min-h-screen bg-gradient-to-br from-cream-50 via-amber-50/50 to-orange-50/30 flex items-center py-16 lg:py-24 relative overflow-hidden" aria-labelledby="hero-title">
+  <!-- Animated background particles -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+  </div>
+  
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid gap-8 lg:gap-12 lg:grid-cols-2 lg:items-center hero-content">
       <!-- Content -->
-      <div class="space-y-8">
+      <div class="space-y-8 animate-fade-in-up">
         <div class="space-y-4">
-          <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-amber-900 leading-tight">
+          <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-amber-900 leading-tight animate-slide-in-left">
             Solidne wykończenia wnętrz
-            <span class="block text-amber-700 text-3xl md:text-4xl lg:text-5xl mt-2">
+            <span class="block text-amber-700 text-3xl md:text-4xl lg:text-5xl mt-2 animate-slide-in-left-delay">
               z pasją do detali
             </span>
           </h1>
-          <h2 class="text-lg md:text-xl lg:text-2xl text-amber-800/80 leading-relaxed max-w-2xl">
+          <h2 class="text-lg md:text-xl lg:text-2xl text-amber-800/80 leading-relaxed max-w-2xl animate-fade-in-delay">
             Malowanie, układanie płytek i drobne remonty w Twoim mieszkaniu. 
             Profesjonalne usługi wykończeniowe z wieloletnim doświadczeniem.
           </h2>
         </div>
         
+        <!-- Social Proof -->
+        <div class="flex items-center space-x-4 animate-fade-in-delay-2">
+          <div class="flex -space-x-2">
+            <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-full border-2 border-white flex items-center justify-center text-white text-sm font-bold">
+              JS
+            </div>
+            <div class="w-10 h-10 bg-gradient-to-br from-orange-600 to-red-500 rounded-full border-2 border-white flex items-center justify-center text-white text-sm font-bold">
+              MK
+            </div>
+            <div class="w-10 h-10 bg-gradient-to-br from-amber-700 to-orange-600 rounded-full border-2 border-white flex items-center justify-center text-white text-sm font-bold">
+              AW
+            </div>
+          </div>
+          <div class="text-sm text-amber-800">
+            <span class="font-semibold">50+ zadowolonych klientów</span>
+            <div class="flex items-center">
+              <span class="text-yellow-500">★★★★★</span>
+              <span class="ml-1 text-amber-700">4.9/5</span>
+            </div>
+          </div>
+        </div>
+        
         <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-delay-3">
           <a 
             href="#kontakt" 
-            class="inline-flex items-center justify-center bg-gradient-to-r from-amber-600 to-orange-500 text-cream-50 px-8 py-4 rounded-full text-lg font-medium hover:from-amber-700 hover:to-orange-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            class="cta-primary group inline-flex items-center justify-center bg-gradient-to-r from-amber-600 to-orange-500 text-cream-50 px-8 py-4 rounded-full text-lg font-medium hover:from-amber-700 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-amber-500/50 focus:scale-105"
+            aria-label="Skontaktuj się z nami w celu bezpłatnej wyceny"
           >
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            Bezpłatna wycena
+            <span class="loading-text">Bezpłatna wycena</span>
+            <span class="loading-spinner hidden">
+              <svg class="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+            </span>
           </a>
           <a 
             href="#uslugi" 
-            class="inline-flex items-center justify-center border-2 border-amber-600 text-amber-800 px-8 py-4 rounded-full text-lg font-medium hover:bg-amber-100/70 transition-all duration-200"
+            class="cta-secondary group inline-flex items-center justify-center border-2 border-amber-600 text-amber-800 px-8 py-4 rounded-full text-lg font-medium hover:bg-amber-100/70 hover:border-amber-700 hover:text-amber-900 transition-all duration-300 hover:shadow-md focus:outline-none focus:ring-4 focus:ring-amber-500/30"
+            aria-label="Zobacz nasze usługi wykończeniowe"
           >
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             Zobacz usługi
@@ -42,91 +80,110 @@
         </div>
 
         <!-- Features -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
-          <div class="flex items-center space-x-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center shadow-md">
-              <svg class="w-5 h-5 text-cream-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 animate-fade-in-delay-4">
+          <div class="feature-card group flex items-center space-x-3 p-4 rounded-xl hover:bg-amber-50/50 transition-all duration-300 hover:scale-105 hover:shadow-md cursor-pointer">
+            <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:rotate-6 transition-all duration-300">
+              <svg class="w-5 h-5 text-cream-50 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
             <div>
-              <div class="font-semibold text-amber-900">15+ lat doświadczenia</div>
-              <div class="text-sm text-amber-700">Sprawdzona jakość</div>
+              <div class="font-semibold text-amber-900 group-hover:text-amber-800 transition-colors duration-300">15+ lat doświadczenia</div>
+              <div class="text-sm text-amber-700 group-hover:text-amber-600 transition-colors duration-300">Sprawdzona jakość</div>
             </div>
           </div>
           
-          <div class="flex items-center space-x-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center shadow-md">
-              <svg class="w-5 h-5 text-cream-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="feature-card group flex items-center space-x-3 p-4 rounded-xl hover:bg-amber-50/50 transition-all duration-300 hover:scale-105 hover:shadow-md cursor-pointer">
+            <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:rotate-6 transition-all duration-300">
+              <svg class="w-5 h-5 text-cream-50 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
             <div>
-              <div class="font-semibold text-amber-900">Terminowość</div>
-              <div class="text-sm text-amber-700">Dotrzymujemy terminów</div>
+              <div class="font-semibold text-amber-900 group-hover:text-amber-800 transition-colors duration-300">Terminowość</div>
+              <div class="text-sm text-amber-700 group-hover:text-amber-600 transition-colors duration-300">Dotrzymujemy terminów</div>
             </div>
           </div>
           
-          <div class="flex items-center space-x-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center shadow-md">
-              <svg class="w-5 h-5 text-cream-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="feature-card group flex items-center space-x-3 p-4 rounded-xl hover:bg-amber-50/50 transition-all duration-300 hover:scale-105 hover:shadow-md cursor-pointer">
+            <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:rotate-6 transition-all duration-300">
+              <svg class="w-5 h-5 text-cream-50 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
               </svg>
             </div>
             <div>
-              <div class="font-semibold text-amber-900">Gwarancja</div>
-              <div class="text-sm text-amber-700">Na wszystkie prace</div>
+              <div class="font-semibold text-amber-900 group-hover:text-amber-800 transition-colors duration-300">Gwarancja</div>
+              <div class="text-sm text-amber-700 group-hover:text-amber-600 transition-colors duration-300">Na wszystkie prace</div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Image/Visual -->
-      <div class="hidden lg:block">
+      <div class="animate-fade-in-right">
         <div class="relative">
-          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 border border-amber-200/60 shadow-2xl overflow-hidden">
+          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 border border-amber-200/60 shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-500 group">
             <!-- Background pattern -->
-            <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
               <div class="grid grid-cols-6 gap-2 p-4 h-full">
-                <div class="bg-amber-600 rounded"></div>
-                <div class="bg-orange-500 rounded"></div>
-                <div class="bg-amber-700 rounded"></div>
-                <div class="bg-orange-400 rounded"></div>
-                <div class="bg-amber-500 rounded"></div>
-                <div class="bg-orange-600 rounded"></div>
+                <div class="bg-amber-600 rounded animate-pulse-slow"></div>
+                <div class="bg-orange-500 rounded animate-pulse-slow delay-100"></div>
+                <div class="bg-amber-700 rounded animate-pulse-slow delay-200"></div>
+                <div class="bg-orange-400 rounded animate-pulse-slow delay-300"></div>
+                <div class="bg-amber-500 rounded animate-pulse-slow delay-400"></div>
+                <div class="bg-orange-600 rounded animate-pulse-slow delay-500"></div>
               </div>
             </div>
             
             <!-- Content -->
             <div class="relative h-full flex flex-col items-center justify-center p-8 text-center">
-              <div class="w-20 h-20 bg-gradient-to-br from-amber-600 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg mb-6">
-                <svg class="w-10 h-10 text-cream-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-20 h-20 bg-gradient-to-br from-amber-600 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                <svg class="w-10 h-10 text-cream-50 group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-amber-900 mb-2">Twoje wymarzone wnętrze</h3>
-              <p class="text-amber-800/80 text-lg leading-relaxed">
+              <h3 class="text-2xl font-bold text-amber-900 mb-2 group-hover:text-amber-800 transition-colors duration-300">Twoje wymarzone wnętrze</h3>
+              <p class="text-amber-800/80 text-lg leading-relaxed group-hover:text-amber-700 transition-colors duration-300">
                 Od projektu po realizację - kompletne wykończenie mieszkań i domów
               </p>
               
               <!-- Decorative elements -->
-              <div class="absolute top-4 right-4 w-3 h-3 bg-amber-600 rounded-full opacity-60"></div>
-              <div class="absolute top-8 right-8 w-2 h-2 bg-orange-500 rounded-full opacity-40"></div>
-              <div class="absolute bottom-4 left-4 w-4 h-4 bg-orange-600 rounded-full opacity-60"></div>
-              <div class="absolute bottom-8 left-8 w-2 h-2 bg-amber-500 rounded-full opacity-40"></div>
+              <div class="absolute top-4 right-4 w-3 h-3 bg-amber-600 rounded-full opacity-60 animate-float"></div>
+              <div class="absolute top-8 right-8 w-2 h-2 bg-orange-500 rounded-full opacity-40 animate-float delay-1000"></div>
+              <div class="absolute bottom-4 left-4 w-4 h-4 bg-orange-600 rounded-full opacity-60 animate-float delay-2000"></div>
+              <div class="absolute bottom-8 left-8 w-2 h-2 bg-amber-500 rounded-full opacity-40 animate-float delay-3000"></div>
             </div>
           </div>
           
           <!-- Floating card -->
-          <div class="absolute -bottom-6 -right-6 bg-cream-50 rounded-xl p-4 shadow-xl border border-amber-200/40">
+          <div class="absolute -bottom-6 -right-6 bg-cream-50 rounded-xl p-4 shadow-xl border border-amber-200/40 hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer animate-fade-in-delay-5">
             <div class="flex items-center space-x-3">
-              <div class="w-12 h-12 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center">
+              <div class="w-12 h-12 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center hover:rotate-12 transition-transform duration-300">
                 <span class="text-cream-50 font-bold text-lg">SW</span>
               </div>
               <div>
                 <div class="font-bold text-amber-900">SalkoWorks</div>
                 <div class="text-sm text-amber-700">Twój partner w remontach</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile Hero Image -->
+      <div class="lg:hidden mt-8 animate-fade-in-up">
+        <div class="relative mx-auto max-w-sm">
+          <div class="aspect-square rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 border border-amber-200/60 shadow-xl overflow-hidden">
+            <div class="relative h-full flex flex-col items-center justify-center p-6 text-center">
+              <div class="w-16 h-16 bg-gradient-to-br from-amber-600 to-orange-500 rounded-xl flex items-center justify-center shadow-lg mb-4">
+                <svg class="w-8 h-8 text-cream-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-amber-900 mb-2">SalkoWorks</h3>
+              <p class="text-amber-800/80 text-sm leading-relaxed">
+                Profesjonalne wykończenia wnętrz
+              </p>
             </div>
           </div>
         </div>
@@ -150,6 +207,90 @@
     scroll-behavior: smooth;
   }
   
+  /* Enhanced CSS Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation classes */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  .animate-fade-in-left {
+    animation: fadeInLeft 0.8s ease-out;
+  }
+  
+  .animate-fade-in-right {
+    animation: fadeInRight 0.8s ease-out;
+  }
+  
+  .animate-slide-in-left {
+    animation: fadeInLeft 0.6s ease-out;
+  }
+  
+  .animate-slide-in-left-delay {
+    animation: fadeInLeft 0.6s ease-out 0.2s both;
+  }
+  
+  .animate-fade-in-delay {
+    animation: fadeIn 0.8s ease-out 0.4s both;
+  }
+  
+  .animate-fade-in-delay-2 {
+    animation: fadeIn 0.8s ease-out 0.6s both;
+  }
+  
+  .animate-fade-in-delay-3 {
+    animation: fadeIn 0.8s ease-out 0.8s both;
+  }
+  
+  .animate-fade-in-delay-4 {
+    animation: fadeIn 0.8s ease-out 1.0s both;
+  }
+  
+  .animate-fade-in-delay-5 {
+    animation: fadeIn 0.8s ease-out 1.2s both;
+  }
+  
   /* Floating animation for decorative elements */
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
@@ -160,13 +301,279 @@
     animation: float 6s ease-in-out infinite;
   }
   
-  /* Subtle pulse animation for CTA button */
-  @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 10px 25px -3px rgba(245, 158, 11, 0.3); }
-    50% { box-shadow: 0 20px 40px -3px rgba(245, 158, 11, 0.4); }
+  .animate-float.delay-1000 {
+    animation-delay: 1s;
   }
   
-  .btn-glow:hover {
-    animation: pulse-glow 2s ease-in-out infinite;
+  .animate-float.delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animate-float.delay-3000 {
+    animation-delay: 3s;
+  }
+  
+  /* Pulse animation for background patterns */
+  @keyframes pulseSlow {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.7; }
+  }
+  
+  .animate-pulse-slow {
+    animation: pulseSlow 4s ease-in-out infinite;
+  }
+  
+  .animate-pulse-slow.delay-100 {
+    animation-delay: 0.1s;
+  }
+  
+  .animate-pulse-slow.delay-200 {
+    animation-delay: 0.2s;
+  }
+  
+  .animate-pulse-slow.delay-300 {
+    animation-delay: 0.3s;
+  }
+  
+  .animate-pulse-slow.delay-400 {
+    animation-delay: 0.4s;
+  }
+  
+  .animate-pulse-slow.delay-500 {
+    animation-delay: 0.5s;
+  }
+  
+  /* Animated background particles */
+  .particle {
+    position: absolute;
+    background: linear-gradient(45deg, #f59e0b, #ea580c);
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: floatParticle 20s ease-in-out infinite;
+  }
+  
+  .particle-1 {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+  
+  .particle-2 {
+    width: 40px;
+    height: 40px;
+    top: 60%;
+    right: 15%;
+    animation-delay: 5s;
+  }
+  
+  .particle-3 {
+    width: 80px;
+    height: 80px;
+    bottom: 30%;
+    left: 5%;
+    animation-delay: 10s;
+  }
+  
+  .particle-4 {
+    width: 30px;
+    height: 30px;
+    top: 40%;
+    right: 25%;
+    animation-delay: 15s;
+  }
+  
+  @keyframes floatParticle {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+      opacity: 0.1;
+    }
+    25% {
+      transform: translateY(-20px) rotate(90deg);
+      opacity: 0.2;
+    }
+    50% {
+      transform: translateY(-10px) rotate(180deg);
+      opacity: 0.15;
+    }
+    75% {
+      transform: translateY(-30px) rotate(270deg);
+      opacity: 0.2;
+    }
+  }
+  
+  /* Enhanced hover effects for CTA buttons */
+  .cta-primary {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cta-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .cta-primary:hover::before {
+    left: 100%;
+  }
+  
+  /* Feature card hover effects */
+  .feature-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(234, 88, 12, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0.75rem;
+  }
+  
+  .feature-card:hover::before {
+    opacity: 1;
+  }
+  
+  /* Loading animation for buttons */
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Enhanced shadows */
+  .shadow-3xl {
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Reduced motion for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-in-up,
+    .animate-fade-in-left,
+    .animate-fade-in-right,
+    .animate-slide-in-left,
+    .animate-slide-in-left-delay,
+    .animate-fade-in-delay,
+    .animate-fade-in-delay-2,
+    .animate-fade-in-delay-3,
+    .animate-fade-in-delay-4,
+    .animate-fade-in-delay-5,
+    .animate-float,
+    .animate-pulse-slow,
+    .particle {
+      animation: none;
+    }
+    
+    .cta-primary::before,
+    .feature-card::before {
+      display: none;
+    }
+  }
+  
+  /* Smooth scroll behavior for anchor links */
+  [href^="#"] {
+    scroll-behavior: smooth;
+  }
+  
+  /* Focus improvements for accessibility */
+  .cta-primary:focus,
+  .cta-secondary:focus {
+    outline: 2px solid #f59e0b;
+    outline-offset: 2px;
   }
 </style>
+
+<script>
+  // Enhanced smooth scrolling for CTA buttons
+  document.addEventListener('DOMContentLoaded', function() {
+    const ctaButtons = document.querySelectorAll('a[href^="#"]');
+    
+    ctaButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = e.target as HTMLAnchorElement;
+        const targetId = target.getAttribute('href')?.substring(1);
+        const targetElement = targetId ? document.getElementById(targetId) : null;
+        
+        if (targetElement) {
+          // Add loading state for primary CTA
+          if (target.classList.contains('cta-primary')) {
+            const loadingText = target.querySelector('.loading-text') as HTMLElement;
+            const loadingSpinner = target.querySelector('.loading-spinner') as HTMLElement;
+            
+            if (loadingText && loadingSpinner) {
+              loadingText.classList.add('hidden');
+              loadingSpinner.classList.remove('hidden');
+              
+              // Reset after 1 second
+              setTimeout(() => {
+                loadingText.classList.remove('hidden');
+                loadingSpinner.classList.add('hidden');
+              }, 1000);
+            }
+          }
+          
+          // Smooth scroll with easing
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+    
+    // Intersection Observer for scroll-based animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const element = entry.target as HTMLElement;
+          element.style.animationPlayState = 'running';
+        }
+      });
+    }, observerOptions);
+    
+    // Observe animated elements
+    const animatedElements = document.querySelectorAll('[class*="animate-"]');
+    animatedElements.forEach(el => {
+      const element = el as HTMLElement;
+      element.style.animationPlayState = 'paused';
+      observer.observe(element);
+    });
+    
+    // Add hover effects for feature cards
+    const featureCards = document.querySelectorAll('.feature-card');
+    featureCards.forEach(card => {
+      card.addEventListener('mouseenter', function(e) {
+        const element = e.target as HTMLElement;
+        element.style.transform = 'translateY(-2px)';
+      });
+      
+      card.addEventListener('mouseleave', function(e) {
+        const element = e.target as HTMLElement;
+        element.style.transform = 'translateY(0)';
+      });
+    });
+  });
+</script>
