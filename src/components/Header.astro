@@ -1,0 +1,250 @@
+---
+---
+
+<header class="sticky top-0 z-50 bg-amber-50/90 backdrop-blur-lg border-b border-amber-200/40 shadow-sm">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a 
+        href="#" 
+        class="flex items-center space-x-2 text-xl font-bold tracking-tight text-amber-900 hover:text-amber-700 transition-colors duration-200"
+      >
+        <div class="w-8 h-8 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center shadow-md">
+          <span class="text-cream-50 font-bold text-sm">SW</span>
+        </div>
+        <span>SalkoWorks</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a 
+          href="#uslugi" 
+          class="nav-link text-amber-800 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 hover:bg-amber-100/70"
+        >
+          Usługi
+        </a>
+        <a 
+          href="#o-mnie" 
+          class="nav-link text-amber-800 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 hover:bg-amber-100/70"
+        >
+          O mnie
+        </a>
+        <a 
+          href="#kontakt" 
+          class="nav-link text-amber-800 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 hover:bg-amber-100/70"
+        >
+          Kontakt
+        </a>
+        <a 
+          href="#kontakt" 
+          class="bg-gradient-to-r from-amber-600 to-orange-500 text-cream-50 px-6 py-2 rounded-full text-sm font-medium hover:from-amber-700 hover:to-orange-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+        >
+          Bezpłatna wycena
+        </a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button 
+        id="mobile-menu-button"
+        class="md:hidden relative w-10 h-10 rounded-lg bg-amber-100/80 hover:bg-amber-200/80 transition-colors duration-200 flex items-center justify-center"
+        aria-label="Otwórz menu"
+        aria-expanded="false"
+      >
+        <div class="hamburger">
+          <span class="hamburger-line top-line"></span>
+          <span class="hamburger-line middle-line"></span>
+          <span class="hamburger-line bottom-line"></span>
+        </div>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div 
+      id="mobile-menu" 
+      class="md:hidden absolute top-full left-0 right-0 bg-cream-50 border-t border-amber-200/60 shadow-lg transform -translate-y-full opacity-0 invisible transition-all duration-300 ease-in-out"
+    >
+      <div class="px-4 py-6 space-y-4">
+        <a 
+          href="#uslugi" 
+          class="mobile-nav-link block px-4 py-3 text-amber-800 hover:text-amber-600 hover:bg-amber-100/70 rounded-lg transition-all duration-200"
+        >
+          Usługi
+        </a>
+        <a 
+          href="#o-mnie" 
+          class="mobile-nav-link block px-4 py-3 text-amber-800 hover:text-amber-600 hover:bg-amber-100/70 rounded-lg transition-all duration-200"
+        >
+          O mnie
+        </a>
+        <a 
+          href="#kontakt" 
+          class="mobile-nav-link block px-4 py-3 text-amber-800 hover:text-amber-600 hover:bg-amber-100/70 rounded-lg transition-all duration-200"
+        >
+          Kontakt
+        </a>
+        <a 
+          href="#kontakt" 
+          class="mobile-nav-link block text-center bg-gradient-to-r from-amber-600 to-orange-500 text-cream-50 px-6 py-3 rounded-lg font-medium hover:from-amber-700 hover:to-orange-600 transition-all duration-200 shadow-lg"
+        >
+          Bezpłatna wycena
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  /* Hamburger menu styles */
+  .hamburger {
+    width: 20px;
+    height: 16px;
+    position: relative;
+  }
+
+  .hamburger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #92400e; /* amber-800 */
+    border-radius: 1px;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+
+  .top-line {
+    top: 0;
+  }
+
+  .middle-line {
+    top: 7px;
+  }
+
+  .bottom-line {
+    top: 14px;
+  }
+
+  /* Active hamburger state */
+  .hamburger.active .top-line {
+    transform: rotate(45deg);
+    top: 7px;
+  }
+
+  .hamburger.active .middle-line {
+    opacity: 0;
+  }
+
+  .hamburger.active .bottom-line {
+    transform: rotate(-45deg);
+    top: 7px;
+  }
+
+  /* Mobile menu active state */
+  .mobile-menu-open {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  /* Smooth scrolling for navigation links */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Active link styling */
+  .nav-link.active,
+  .mobile-nav-link.active {
+    color: #d97706; /* amber-600 */
+    background-color: #fef3c7; /* amber-100 */
+  }
+
+  /* Custom cream colors fallback */
+  .text-cream-50 {
+    color: #fffbf0;
+  }
+
+  .bg-cream-50 {
+    background-color: #fffbf0;
+  }
+</style>
+
+<script>
+  // Mobile menu functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (!mobileMenuButton || !mobileMenu) return;
+    
+    const hamburger = mobileMenuButton.querySelector('.hamburger');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    // Toggle mobile menu
+    mobileMenuButton.addEventListener('click', function() {
+      const isOpen = mobileMenu.classList.contains('mobile-menu-open');
+      
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+
+    function openMobileMenu() {
+      if (!mobileMenu || !mobileMenuButton) return;
+      mobileMenu.classList.add('mobile-menu-open');
+      if (hamburger) hamburger.classList.add('active');
+      mobileMenuButton.setAttribute('aria-expanded', 'true');
+      mobileMenuButton.setAttribute('aria-label', 'Zamknij menu');
+    }
+
+    function closeMobileMenu() {
+      if (!mobileMenu || !mobileMenuButton) return;
+      mobileMenu.classList.remove('mobile-menu-open');
+      if (hamburger) hamburger.classList.remove('active');
+      mobileMenuButton.setAttribute('aria-expanded', 'false');
+      mobileMenuButton.setAttribute('aria-label', 'Otwórz menu');
+    }
+
+    // Close mobile menu when clicking on a link
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const target = event.target as HTMLElement;
+      if (!mobileMenuButton.contains(target) && !mobileMenu.contains(target)) {
+        closeMobileMenu();
+      }
+    });
+
+    // Active link highlighting
+    function setActiveLink() {
+      const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+      const sections = document.querySelectorAll('section[id], main > *[id]');
+      
+      navLinks.forEach(link => link.classList.remove('active'));
+      
+      const scrollPosition = window.scrollY + 100;
+      
+      sections.forEach(section => {
+        const htmlSection = section as HTMLElement;
+        const sectionTop = htmlSection.offsetTop;
+        const sectionHeight = htmlSection.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${sectionId}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    }
+
+    // Update active link on scroll
+    window.addEventListener('scroll', setActiveLink);
+    setActiveLink(); // Set initial state
+  });
+</script>
