@@ -3,353 +3,650 @@
 
 <section 
   id="o-mnie" 
-  class="py-16 lg:py-24 bg-gradient-to-br from-amber-50/60 via-cream-50 to-orange-50/40 relative overflow-hidden" 
+  class="py-16 lg:py-24 bg-gradient-to-br from-cream-50 via-amber-50/40 to-orange-50/20 relative overflow-hidden" 
   aria-labelledby="o-mnie-title"
 >
-  <!-- Background decorative elements -->
-  <div class="absolute inset-0 overflow-hidden pointer-events-none">
-    <div class="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-amber-200/20 to-orange-200/20 rounded-full blur-3xl animate-float-slow"></div>
-    <div class="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-orange-200/20 to-amber-200/20 rounded-full blur-3xl animate-float-slow-reverse"></div>
+  <!-- Simplified animated background -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+    <div class="particle particle-about-1"></div>
+    <div class="particle particle-about-2"></div>
+    <div class="particle particle-about-3"></div>
   </div>
 
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="grid gap-12 lg:gap-20 xl:gap-24 md:grid-cols-2 md:items-start">
-      <!-- Content Column -->
-      <div class="space-y-8 animate-on-scroll" data-animation="fade-slide-up">
-        <div class="space-y-6">
-          <div class="space-y-4">
-            <h2 id="o-mnie-title" class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-amber-900 leading-tight transition-all duration-300 hover:text-amber-800">
-              Kilka słów o mnie
-            </h2>
-            <div class="w-20 h-1.5 bg-gradient-to-r from-amber-600 via-orange-500 to-amber-600 rounded-full shadow-lg animate-pulse-soft"></div>
-          </div>
-          
-          <!-- Progress indicator -->
-          <div class="flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-amber-200/60 shadow-lg">
-            <div class="flex space-x-1">
-              <div class="w-2 h-2 bg-amber-600 rounded-full animate-pulse" style="animation-delay: 0s;"></div>
-              <div class="w-2 h-2 bg-orange-500 rounded-full animate-pulse" style="animation-delay: 0.5s;"></div>
-              <div class="w-2 h-2 bg-amber-600 rounded-full animate-pulse" style="animation-delay: 1s;"></div>
-            </div>
-            <p class="text-sm font-medium text-amber-800">Rozpoczynam swoją przygodę w branży</p>
-          </div>
-        </div>
-        
-        <div class="space-y-8 text-lg leading-relaxed">
-          <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-amber-200/40 hover:shadow-xl transition-all duration-300 hover:scale-[1.02] hover:bg-white/80">
-            <p class="text-amber-800/90">
-              Jestem na początku swojej drogi w branży remontowej, dlatego do każdego zlecenia
-              podchodzę z <strong class="font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">maksymalnym zaangażowaniem</strong> i 
-              dbałością o detale. Stawiam na jakość i solidność wykonania.
-            </p>
-          </div>
-          
-          <div class="bg-gradient-to-r from-amber-100/80 to-orange-100/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-amber-200/40 hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
-            <p class="text-amber-800/90">
-              <strong class="font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">Twoje zadowolenie jest moim priorytetem.</strong> 
-              Każdy projekt to dla mnie okazja do nauki i doskonalenia umiejętności, 
-              dlatego gwarantuję pełne zaangażowanie i rzetelne podejście do powierzonych mi zadań.
-            </p>
-          </div>
-        </div>
-
-        <!-- Key Points -->
-        <div class="grid gap-4 sm:grid-cols-2 lg:gap-6 animate-on-scroll" data-animation="stagger-up">
-          <div class="feature-card group flex items-center space-x-4 bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-amber-200/50 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/90 cursor-pointer focus:outline-none focus:ring-4 focus:ring-amber-200/50" tabindex="0" role="button" aria-label="Dowiedz się więcej o dbałości o detale">
-            <div class="w-12 h-12 bg-gradient-to-br from-amber-600 to-orange-500 rounded-2xl flex items-center justify-center shadow-xl group-hover:shadow-2xl group-hover:scale-110 transition-all duration-300 relative overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <svg class="w-6 h-6 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-            </div>
-            <div class="flex-1">
-              <div class="font-bold text-amber-900 text-lg group-hover:text-amber-800 transition-colors duration-300">Dbałość o detale</div>
-              <div class="text-amber-700/80 text-sm leading-relaxed group-hover:text-amber-700 transition-colors duration-300">Każdy szczegół ma znaczenie</div>
-            </div>
-            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </div>
-          </div>
-          
-          <div class="feature-card group flex items-center space-x-4 bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-amber-200/50 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/90 cursor-pointer focus:outline-none focus:ring-4 focus:ring-amber-200/50" tabindex="0" role="button" aria-label="Dowiedz się więcej o pełnym zaangażowaniu">
-            <div class="w-12 h-12 bg-gradient-to-br from-amber-600 to-orange-500 rounded-2xl flex items-center justify-center shadow-xl group-hover:shadow-2xl group-hover:scale-110 transition-all duration-300 relative overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <svg class="w-6 h-6 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-            <div class="flex-1">
-              <div class="font-bold text-amber-900 text-lg group-hover:text-amber-800 transition-colors duration-300">Pełne zaangażowanie</div>
-              <div class="text-amber-700/80 text-sm leading-relaxed group-hover:text-amber-700 transition-colors duration-300">100% koncentracji na projekcie</div>
-            </div>
-            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </div>
-          </div>
-          
-          <div class="feature-card group flex items-center space-x-4 bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-amber-200/50 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/90 cursor-pointer focus:outline-none focus:ring-4 focus:ring-amber-200/50" tabindex="0" role="button" aria-label="Dowiedz się więcej o punktualności">
-            <div class="w-12 h-12 bg-gradient-to-br from-amber-600 to-orange-500 rounded-2xl flex items-center justify-center shadow-xl group-hover:shadow-2xl group-hover:scale-110 transition-all duration-300 relative overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <svg class="w-6 h-6 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-            </div>
-            <div class="flex-1">
-              <div class="font-bold text-amber-900 text-lg group-hover:text-amber-800 transition-colors duration-300">Punktualność</div>
-              <div class="text-amber-700/80 text-sm leading-relaxed group-hover:text-amber-700 transition-colors duration-300">Dotrzymuję ustalonych terminów</div>
-            </div>
-            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </div>
-          </div>
-          
-          <div class="feature-card group flex items-center space-x-4 bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-amber-200/50 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/90 cursor-pointer focus:outline-none focus:ring-4 focus:ring-amber-200/50" tabindex="0" role="button" aria-label="Dowiedz się więcej o indywidualnym podejściu">
-            <div class="w-12 h-12 bg-gradient-to-br from-amber-600 to-orange-500 rounded-2xl flex items-center justify-center shadow-xl group-hover:shadow-2xl group-hover:scale-110 transition-all duration-300 relative overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <svg class="w-6 h-6 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-              </svg>
-            </div>
-            <div class="flex-1">
-              <div class="font-bold text-amber-900 text-lg group-hover:text-amber-800 transition-colors duration-300">Indywidualne podejście</div>
-              <div class="text-amber-700/80 text-sm leading-relaxed group-hover:text-amber-700 transition-colors duration-300">Każdy klient jest wyjątkowy</div>
-            </div>
-            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-
+  <div class="container mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 relative z-10">
+    <!-- Header Section -->
+    <div class="text-center mb-12 lg:mb-16 animate-fade-in-up">
+      <div class="inline-flex items-center space-x-2 bg-amber-100/60 text-amber-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+        </svg>
+        <span>Poznaj naszą historię</span>
       </div>
+      
+      <h2 id="o-mnie-title" class="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-amber-900 leading-tight mb-4">
+        Poznaj
+        <span class="block bg-gradient-to-r from-amber-700 to-orange-600 bg-clip-text text-transparent">
+          Salko Works
+        </span>
+      </h2>
+      
+      <p class="text-lg xs:text-xl text-amber-800/80 leading-relaxed max-w-3xl mx-auto">
+        Młoda firma z dużymi ambicjami i pasją do tworzenia pięknych wnętrz. 
+        Każdy projekt traktujemy jako inwestycję w przyszłość.
+      </p>
+    </div>
 
-      <!-- Image Column -->
-      <div class="order-first md:order-last animate-on-scroll" data-animation="fade-slide-left">
-        <div class="relative">
-          <!-- Main Image Container -->
-          <div class="aspect-[4/5] rounded-3xl bg-gradient-to-br from-amber-100/90 via-cream-100/90 to-orange-100/90 border border-amber-200/60 shadow-2xl overflow-hidden relative group hover:shadow-3xl transition-all duration-500 parallax-element">
-            <!-- Enhanced Background Pattern -->
-            <div class="absolute inset-0 opacity-15">
-              <div class="grid grid-cols-10 gap-1 p-6 h-full">
-                <div class="bg-amber-600 rounded-sm animate-pulse" style="animation-delay: 0s;"></div>
-                <div class="bg-orange-500 rounded-sm animate-pulse" style="animation-delay: 0.5s;"></div>
-                <div class="bg-amber-700 rounded-sm animate-pulse" style="animation-delay: 1s;"></div>
-                <div class="bg-orange-400 rounded-sm animate-pulse" style="animation-delay: 1.5s;"></div>
-                <div class="bg-amber-500 rounded-sm animate-pulse" style="animation-delay: 2s;"></div>
-                <div class="bg-orange-600 rounded-sm animate-pulse" style="animation-delay: 2.5s;"></div>
-                <div class="bg-amber-600 rounded-sm animate-pulse" style="animation-delay: 3s;"></div>
-                <div class="bg-orange-500 rounded-sm animate-pulse" style="animation-delay: 3.5s;"></div>
-                <div class="bg-amber-700 rounded-sm animate-pulse" style="animation-delay: 4s;"></div>
-                <div class="bg-orange-400 rounded-sm animate-pulse" style="animation-delay: 4.5s;"></div>
+    <div class="grid gap-8 lg:gap-16 xl:gap-20 lg:grid-cols-2 lg:items-start">
+      <!-- Interactive Content Tabs -->
+      <div class="space-y-8 animate-fade-in-left">
+        <!-- Tab Navigation -->
+        <div class="flex space-x-1 bg-white/50 backdrop-blur-sm p-1 rounded-xl border border-amber-200/40 shadow-sm">
+          <button class="tab-button active flex-1 px-4 py-3 text-sm font-medium rounded-lg transition-all duration-300" data-tab="mission">
+            Nasza Misja
+          </button>
+          <button class="tab-button flex-1 px-4 py-3 text-sm font-medium rounded-lg transition-all duration-300" data-tab="approach">
+            Podejście
+          </button>
+          <button class="tab-button flex-1 px-4 py-3 text-sm font-medium rounded-lg transition-all duration-300" data-tab="values">
+            Wartości
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content-container min-h-[400px]">
+          <!-- Mission Tab -->
+          <div class="tab-content active" data-content="mission">
+            <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-xl border border-amber-200/40 hover:shadow-2xl transition-all duration-500">
+              <div class="flex items-start space-x-4 mb-6">
+                <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-emerald-500 rounded-2xl flex items-center justify-center shadow-lg">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-amber-900 text-xl mb-2">Nasza Misja</h3>
+                  <div class="w-12 h-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full"></div>
+                </div>
               </div>
-            </div>
-            
-            <!-- Overlay gradient -->
-            <div class="absolute inset-0 bg-gradient-to-t from-amber-900/20 via-transparent to-amber-600/10"></div>
-            
-            <!-- Placeholder Content -->
-            <div class="relative h-full flex flex-col items-center justify-center p-8 text-center">
-              <div class="w-28 h-28 bg-gradient-to-br from-amber-600 to-orange-500 rounded-3xl flex items-center justify-center shadow-2xl mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <svg class="w-14 h-14 text-white relative z-10 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                </svg>
-              </div>
-              <h3 class="text-2xl lg:text-3xl font-bold text-amber-900 mb-4 group-hover:text-amber-800 transition-colors duration-300">Miejsce na zdjęcie</h3>
-              <p class="text-amber-800/80 text-lg leading-relaxed max-w-sm group-hover:text-amber-800 transition-colors duration-300">
-                Tutaj znajdzie się moje zdjęcie portretowe, które pozwoli Ci lepiej mnie poznać
+              
+              <p class="text-amber-800/90 text-lg leading-relaxed mb-6">
+                Jako młoda firma w branży remontowej, do każdego zlecenia podchodzimy z 
+                <strong class="font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">maksymalnym zaangażowaniem</strong> i 
+                świeżym spojrzeniem. Łączymy nowoczesne techniki z sprawdzonymi metodami.
               </p>
               
-              <!-- Enhanced decorative elements -->
-              <div class="absolute top-6 right-6 w-5 h-5 bg-amber-600 rounded-full opacity-70 animate-pulse-soft"></div>
-              <div class="absolute top-12 right-14 w-3 h-3 bg-orange-500 rounded-full opacity-50 animate-pulse-soft" style="animation-delay: 1s;"></div>
-              <div class="absolute bottom-8 left-8 w-4 h-4 bg-orange-600 rounded-full opacity-70 animate-pulse-soft" style="animation-delay: 2s;"></div>
-              <div class="absolute bottom-16 left-16 w-2 h-2 bg-amber-500 rounded-full opacity-50 animate-pulse-soft" style="animation-delay: 3s;"></div>
-              <div class="absolute top-1/2 left-6 w-2 h-8 bg-gradient-to-b from-amber-400/30 to-orange-400/30 rounded-full"></div>
-              <div class="absolute top-1/3 right-8 w-2 h-12 bg-gradient-to-b from-orange-400/30 to-amber-400/30 rounded-full"></div>
+              <!-- Mission Stats -->
+              <div class="grid grid-cols-2 gap-4">
+                <div class="text-center p-4 bg-amber-50/70 rounded-xl">
+                  <div class="text-2xl font-bold text-amber-900 mb-1">100%</div>
+                  <div class="text-sm text-amber-700">Zaangażowanie</div>
+                </div>
+                <div class="text-center p-4 bg-orange-50/70 rounded-xl">
+                  <div class="text-2xl font-bold text-amber-900 mb-1">24/7</div>
+                  <div class="text-sm text-amber-700">Wsparcie</div>
+                </div>
+              </div>
             </div>
           </div>
-          
-          <!-- Enhanced Floating Achievement Cards -->
-          <div class="absolute -top-6 -left-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-amber-200/60 transform rotate-3 hover:rotate-6 hover:scale-110 transition-all duration-500 animate-float group cursor-pointer" tabindex="0" role="button" aria-label="Jakość - Priorytet numer 1">
+
+          <!-- Approach Tab -->
+          <div class="tab-content" data-content="approach">
+            <div class="bg-gradient-to-r from-amber-100/80 to-orange-100/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-xl border border-amber-200/40 hover:shadow-2xl transition-all duration-500">
+              <div class="flex items-start space-x-4 mb-6">
+                <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-500 rounded-2xl flex items-center justify-center shadow-lg">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-amber-900 text-xl mb-2">Nasze Podejście</h3>
+                  <div class="w-12 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"></div>
+                </div>
+              </div>
+              
+              <p class="text-amber-800/90 text-lg leading-relaxed mb-6">
+                <strong class="font-bold bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">Twoje zadowolenie jest naszym priorytetem.</strong> 
+                Każdy projekt to dla nas okazja do pokazania swojego potencjału i budowania długotrwałych relacji z klientami.
+              </p>
+              
+              <!-- Process Steps -->
+              <div class="space-y-3">
+                <div class="flex items-center space-x-3 p-3 bg-white/60 rounded-lg">
+                  <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+                  <span class="text-amber-800 font-medium">Bezpłatna konsultacja</span>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-white/60 rounded-lg">
+                  <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                  <span class="text-amber-800 font-medium">Szczegółowa wycena</span>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-white/60 rounded-lg">
+                  <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                  <span class="text-amber-800 font-medium">Profesjonalne wykonanie</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Values Tab -->
+          <div class="tab-content" data-content="values">
+            <div class="bg-gradient-to-br from-purple-100/60 to-pink-100/60 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-xl border border-amber-200/40 hover:shadow-2xl transition-all duration-500">
+              <div class="flex items-start space-x-4 mb-6">
+                <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-amber-900 text-xl mb-2">Nasze Wartości</h3>
+                  <div class="w-12 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+                </div>
+              </div>
+              
+              <p class="text-amber-800/90 text-lg leading-relaxed mb-6">
+                Będąc nową firmą, nie obciążają nas "stare przyzwyczajenia". 
+                Śledzimy najnowsze trendy, technologie i materiały, aby oferować 
+                <strong class="font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">najlepsze rozwiązania</strong> 
+                dostępne na rynku.
+              </p>
+              
+              <!-- Values Grid -->
+              <div class="grid grid-cols-2 gap-4">
+                <div class="text-center p-4 bg-white/60 rounded-xl group hover:bg-white/80 transition-all duration-300">
+                  <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-500 rounded-lg mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                  </div>
+                  <div class="font-semibold text-amber-900 text-sm">Innowacyjność</div>
+                </div>
+                <div class="text-center p-4 bg-white/60 rounded-xl group hover:bg-white/80 transition-all duration-300">
+                  <div class="w-10 h-10 bg-gradient-to-br from-green-600 to-emerald-500 rounded-lg mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div class="font-semibold text-amber-900 text-sm">Jakość</div>
+                </div>
+                <div class="text-center p-4 bg-white/60 rounded-xl group hover:bg-white/80 transition-all duration-300">
+                  <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-500 rounded-lg mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                    </svg>
+                  </div>
+                  <div class="font-semibold text-amber-900 text-sm">Transparentność</div>
+                </div>
+                <div class="text-center p-4 bg-white/60 rounded-xl group hover:bg-white/80 transition-all duration-300">
+                  <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                    </svg>
+                  </div>
+                  <div class="font-semibold text-amber-900 text-sm">Uczciwość</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enhanced Key Features -->
+        <div class="grid grid-cols-2 gap-4 animate-fade-in-delay">
+          <div class="feature-card-enhanced group p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-amber-200/30 hover:border-amber-300/50 hover:bg-white/80 transition-all duration-300 cursor-pointer">
             <div class="flex items-center space-x-3">
-              <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-shadow duration-300 relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <svg class="w-5 h-5 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              <div class="w-10 h-10 bg-gradient-to-br from-emerald-600 to-green-500 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
               </div>
               <div>
-                <div class="font-bold text-amber-900 text-base group-hover:text-amber-800 transition-colors duration-300">Jakość</div>
-                <div class="text-xs text-amber-700 font-medium group-hover:text-amber-600 transition-colors duration-300">Priorytet #1</div>
+                <div class="font-semibold text-amber-900 text-sm group-hover:text-amber-800 transition-colors duration-300">Gwarantowana Jakość</div>
+                <div class="text-xs text-amber-700/80">Sprawdzone materiały</div>
               </div>
             </div>
           </div>
           
-          <div class="absolute -bottom-6 -right-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-amber-200/60 transform -rotate-3 hover:-rotate-6 hover:scale-110 transition-all duration-500 animate-float-reverse group cursor-pointer" tabindex="0" role="button" aria-label="Zaangażowanie - 100 procent">
+          <div class="feature-card-enhanced group p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-amber-200/30 hover:border-amber-300/50 hover:bg-white/80 transition-all duration-300 cursor-pointer">
             <div class="flex items-center space-x-3">
-              <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-shadow duration-300 relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <svg class="w-5 h-5 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-500 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="font-semibold text-amber-900 text-sm group-hover:text-amber-800 transition-colors duration-300">Terminowość</div>
+                <div class="text-xs text-amber-700/80">Dotrzymujemy terminów</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="feature-card-enhanced group p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-amber-200/30 hover:border-amber-300/50 hover:bg-white/80 transition-all duration-300 cursor-pointer">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="font-semibold text-amber-900 text-sm group-hover:text-amber-800 transition-colors duration-300">Uczciwe Ceny</div>
+                <div class="text-xs text-amber-700/80">Bez ukrytych kosztów</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="feature-card-enhanced group p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-amber-200/30 hover:border-amber-300/50 hover:bg-white/80 transition-all duration-300 cursor-pointer">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-500 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                 </svg>
               </div>
               <div>
-                <div class="font-bold text-amber-900 text-base group-hover:text-amber-800 transition-colors duration-300">Zaangażowanie</div>
-                <div class="text-xs text-amber-700 font-medium group-hover:text-amber-600 transition-colors duration-300">100%</div>
+                <div class="font-semibold text-amber-900 text-sm group-hover:text-amber-800 transition-colors duration-300">Indywidualne Podejście</div>
+                <div class="text-xs text-amber-700/80">Każdy projekt unikalny</div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Enhanced Visual Column -->
+      <div class="animate-fade-in-right">
+        <div class="relative">
+          <!-- Main Visual Container -->
+          <div class="aspect-[4/3] rounded-3xl bg-gradient-to-br from-amber-100 to-orange-100 border border-amber-200/60 shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-500 group">
+            <!-- Animated background pattern -->
+            <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
+              <div class="grid grid-cols-8 gap-1 p-6 h-full">
+                <div class="bg-amber-600 rounded animate-pulse-slow"></div>
+                <div class="bg-orange-500 rounded animate-pulse-slow delay-100"></div>
+                <div class="bg-amber-700 rounded animate-pulse-slow delay-200"></div>
+                <div class="bg-orange-400 rounded animate-pulse-slow delay-300"></div>
+                <div class="bg-amber-500 rounded animate-pulse-slow delay-400"></div>
+                <div class="bg-orange-600 rounded animate-pulse-slow delay-500"></div>
+                <div class="bg-amber-600 rounded animate-pulse-slow delay-600"></div>
+                <div class="bg-orange-500 rounded animate-pulse-slow delay-700"></div>
+              </div>
+            </div>
+            
+            <!-- Content -->
+            <div class="relative h-full flex flex-col items-center justify-center p-8 text-center">
+              <div class="w-24 h-24 bg-gradient-to-br from-amber-600 to-orange-500 rounded-3xl flex items-center justify-center shadow-xl mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                <svg class="w-12 h-12 text-cream-50 group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl lg:text-3xl font-bold text-amber-900 mb-4 group-hover:text-amber-800 transition-colors duration-300">Nasze Portfolio</h3>
+              <p class="text-amber-800/80 text-lg leading-relaxed group-hover:text-amber-700 transition-colors duration-300 mb-6">
+                Zdjęcia z realizowanych projektów już wkrótce. Obecnie skupiamy się na dostarczaniu najwyższej jakości usług.
+              </p>
+              
+              <!-- Progress indicator -->
+              <div class="flex items-center space-x-2 text-amber-700">
+                <div class="w-2 h-2 bg-amber-600 rounded-full animate-pulse"></div>
+                <span class="text-sm font-medium">Wkrótce galeria realizacji</span>
+                <div class="w-2 h-2 bg-orange-500 rounded-full animate-pulse" style="animation-delay: 0.5s;"></div>
+              </div>
+              
+              <!-- Floating decorative elements -->
+              <div class="absolute top-6 right-6 w-3 h-3 bg-amber-600 rounded-full opacity-60 animate-float"></div>
+              <div class="absolute top-12 right-12 w-2 h-2 bg-orange-500 rounded-full opacity-40 animate-float delay-1000"></div>
+              <div class="absolute bottom-6 left-6 w-4 h-4 bg-orange-600 rounded-full opacity-60 animate-float delay-2000"></div>
+              <div class="absolute bottom-12 left-12 w-2 h-2 bg-amber-500 rounded-full opacity-40 animate-float delay-3000"></div>
+            </div>
+          </div>
           
-          <!-- Additional floating element -->
-          <div class="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-gradient-to-r from-amber-500 to-orange-500 text-white px-3 py-2 rounded-full shadow-xl font-bold text-sm animate-bounce-slow" style="animation-delay: 2s;">
-            Nowy!
+          <!-- Floating achievement card -->
+          <div class="absolute -bottom-6 -right-4 lg:-right-6 bg-cream-50 rounded-2xl p-4 lg:p-6 shadow-2xl border border-amber-200/40 hover:shadow-3xl hover:scale-105 transition-all duration-300 cursor-pointer animate-fade-in-delay-2 max-w-xs">
+            <div class="flex items-center space-x-4">
+              <div class="w-14 h-14 bg-gradient-to-br from-emerald-600 to-green-500 rounded-xl flex items-center justify-center hover:rotate-12 transition-transform duration-300">
+                <svg class="w-7 h-7 text-cream-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="font-bold text-amber-900 text-lg">Młoda energia</div>
+                <div class="text-sm text-amber-700">Świeże spojrzenie na remonty</div>
+                <div class="text-xs text-amber-600 mt-1">✨ Innowacyjne rozwiązania</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    
+    
   </div>
 </section>
 
 <style>
-  /* Enhanced animations specific to About component */
-  @keyframes float-slow {
-    0%, 100% { 
-      transform: translate(0px, 0px) scale(1);
-      opacity: 0.7;
-    }
-    33% { 
-      transform: translate(10px, -10px) scale(1.05);
-      opacity: 0.8;
-    }
-    66% { 
-      transform: translate(-5px, -15px) scale(0.95);
-      opacity: 0.9;
-    }
+  /* Tab system styles */
+  .tab-button {
+    background: transparent;
+    color: #92400e;
+    border: none;
+    cursor: pointer;
   }
   
-  @keyframes float-slow-reverse {
-    0%, 100% { 
-      transform: translate(0px, 0px) scale(1);
-      opacity: 0.7;
-    }
-    33% { 
-      transform: translate(-10px, -10px) scale(1.05);
-      opacity: 0.8;
-    }
-    66% { 
-      transform: translate(5px, -15px) scale(0.95);
-      opacity: 0.9;
-    }
+  .tab-button.active {
+    background: linear-gradient(135deg, #f59e0b, #ea580c);
+    color: #fffbf0;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
   }
   
-  @keyframes bounce-slow {
-    0%, 100% { 
-      transform: translateY(0px) scale(1);
-    }
-    50% { 
-      transform: translateY(-5px) scale(1.05);
-    }
+  .tab-button:hover:not(.active) {
+    background: rgba(245, 158, 11, 0.1);
+    color: #78350f;
   }
   
-  @keyframes pulse-soft {
-    0%, 100% { 
-      opacity: 0.6;
-      transform: scale(1);
-    }
-    50% { 
-      opacity: 1;
-      transform: scale(1.1);
-    }
-  }
-  
-  .animate-float-slow {
-    animation: float-slow 12s ease-in-out infinite;
-  }
-  
-  .animate-float-slow-reverse {
-    animation: float-slow-reverse 14s ease-in-out infinite;
-  }
-  
-  .animate-bounce-slow {
-    animation: bounce-slow 3s ease-in-out infinite;
-  }
-  
-  .animate-pulse-soft {
-    animation: pulse-soft 2s ease-in-out infinite;
-  }
-  
-  /* Scroll animations */
-  .animate-on-scroll {
+  .tab-content {
+    display: none;
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(20px);
+    transition: all 0.4s ease;
   }
   
-  .animate-on-scroll.animate {
+  .tab-content.active {
+    display: block;
     opacity: 1;
     transform: translateY(0);
+    animation: fadeInUp 0.4s ease-out;
   }
   
-  /* Parallax effect */
-  .parallax-element {
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    will-change: transform;
+  /* Enhanced feature cards */
+  .feature-card-enhanced {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .feature-card-enhanced::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(234, 88, 12, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0.75rem;
+  }
+  
+  .feature-card-enhanced:hover::before {
+    opacity: 1;
+  }
+  
+  /* Optimized animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+  }
+  
+  @keyframes pulseSlow {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.7; }
+  }
+  
+  /* Animation classes */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  .animate-fade-in-left {
+    animation: fadeInLeft 0.8s ease-out;
+  }
+  
+  .animate-fade-in-right {
+    animation: fadeInRight 0.8s ease-out;
+  }
+  
+  .animate-fade-in-delay {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+  }
+  
+  .animate-fade-in-delay-2 {
+    animation: fadeInUp 0.8s ease-out 0.8s both;
+  }
+  
+  .animate-fade-in-delay-3 {
+    animation: fadeInUp 0.8s ease-out 1.2s both;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float.delay-1000 {
+    animation-delay: 1s;
+  }
+  
+  .animate-float.delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animate-float.delay-3000 {
+    animation-delay: 3s;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulseSlow 4s ease-in-out infinite;
+  }
+  
+  .animate-pulse-slow.delay-100 { animation-delay: 0.1s; }
+  .animate-pulse-slow.delay-200 { animation-delay: 0.2s; }
+  .animate-pulse-slow.delay-300 { animation-delay: 0.3s; }
+  .animate-pulse-slow.delay-400 { animation-delay: 0.4s; }
+  .animate-pulse-slow.delay-500 { animation-delay: 0.5s; }
+  .animate-pulse-slow.delay-600 { animation-delay: 0.6s; }
+  .animate-pulse-slow.delay-700 { animation-delay: 0.7s; }
+  
+  /* Simplified particles */
+  .particle {
+    position: absolute;
+    background: linear-gradient(45deg, #f59e0b, #ea580c);
+    border-radius: 50%;
+    opacity: 0.06;
+    animation: floatParticle 20s ease-in-out infinite;
+  }
+  
+  .particle-about-1 {
+    width: 60px;
+    height: 60px;
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+  }
+  
+  .particle-about-2 {
+    width: 40px;
+    height: 40px;
+    top: 70%;
+    right: 8%;
+    animation-delay: 7s;
+  }
+  
+  .particle-about-3 {
+    width: 80px;
+    height: 80px;
+    bottom: 20%;
+    left: 70%;
+    animation-delay: 14s;
+  }
+  
+  @keyframes floatParticle {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+      opacity: 0.06;
+    }
+    50% {
+      transform: translateY(-20px) rotate(180deg);
+      opacity: 0.12;
+    }
   }
   
   /* Enhanced shadows */
   .shadow-3xl {
-    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
   }
   
-  /* Mobile optimizations */
-  @media (max-width: 768px) {
-    .parallax-element {
-      transform: none;
+  /* Accessibility improvements */
+  .tab-button:focus {
+    outline: 2px solid #f59e0b;
+    outline-offset: 2px;
+  }
+  
+  .feature-card-enhanced:focus {
+    outline: 2px solid #f59e0b;
+    outline-offset: 2px;
+  }
+  
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-in-up,
+    .animate-fade-in-left,
+    .animate-fade-in-right,
+    .animate-fade-in-delay,
+    .animate-fade-in-delay-2,
+    .animate-fade-in-delay-3,
+    .animate-float,
+    .animate-pulse-slow,
+    .particle {
+      animation: none;
+    }
+    
+    .tab-content {
+      transition: none;
+    }
+    
+    .feature-card-enhanced::before {
+      display: none;
     }
   }
 </style>
 
 <script>
-  // Intersection Observer for scroll animations
-  if (typeof window !== 'undefined') {
+  // Enhanced tab functionality with smooth transitions
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    // Tab switching functionality
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const targetTab = (button as HTMLElement).dataset.tab;
+        
+        // Remove active state from all buttons and contents
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        // Add active state to clicked button and corresponding content
+        button.classList.add('active');
+        const targetContent = document.querySelector(`[data-content="${targetTab}"]`);
+        if (targetContent) {
+          targetContent.classList.add('active');
+        }
+      });
+      
+      // Keyboard navigation
+      button.addEventListener('keydown', (e) => {
+        const keyEvent = e as KeyboardEvent;
+        if (keyEvent.key === 'Enter' || keyEvent.key === ' ') {
+          keyEvent.preventDefault();
+          (button as HTMLElement).click();
+        }
+      });
+    });
+    
+    // Intersection Observer for scroll-based animations
     const observerOptions = {
       threshold: 0.1,
-      rootMargin: '0px 0px -10% 0px'
+      rootMargin: '0px 0px -50px 0px'
     };
     
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
+          const element = entry.target as HTMLElement;
+          element.style.animationPlayState = 'running';
         }
       });
     }, observerOptions);
     
-    // Observe all animated elements
-    document.querySelectorAll('.animate-on-scroll').forEach(el => {
-      observer.observe(el);
+    // Observe animated elements
+    const animatedElements = document.querySelectorAll('[class*="animate-"]');
+    animatedElements.forEach(el => {
+      const element = el as HTMLElement;
+      element.style.animationPlayState = 'paused';
+      observer.observe(element);
     });
     
-   
-    
-    // Keyboard navigation for feature cards
-    document.querySelectorAll('.feature-card').forEach(card => {
+    // Enhanced hover effects for feature cards
+    const featureCards = document.querySelectorAll('.feature-card-enhanced');
+    featureCards.forEach(card => {
+      card.addEventListener('mouseenter', function(this: HTMLElement) {
+        this.style.transform = 'translateY(-2px) scale(1.02)';
+      });
+      
+      card.addEventListener('mouseleave', function(this: HTMLElement) {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+      
+      // Keyboard navigation
       card.addEventListener('keydown', (e) => {
         const keyEvent = e as KeyboardEvent;
         if (keyEvent.key === 'Enter' || keyEvent.key === ' ') {
           keyEvent.preventDefault();
-          (card as HTMLElement).click();
+          // Add click functionality if needed
+          console.log('Feature card activated:', card);
         }
       });
     });
-  }
+    
+    // Smooth scrolling for CTA button
+    const ctaButton = document.querySelector('a[href="#kontakt"]');
+    if (ctaButton) {
+      ctaButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector('#kontakt');
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    }
+  });
 </script>

@@ -1,7 +1,7 @@
 ---
 ---
 
-<section id="home" class="min-h-screen bg-gradient-to-br from-cream-50 via-amber-50/50 to-orange-50/30 flex items-center py-16 lg:py-24 relative overflow-hidden" aria-labelledby="hero-title">
+<section id="home" class="min-h-screen bg-gradient-to-br from-cream-50 via-amber-50/50 to-orange-50/30 flex items-center py-16 lg:py-20 relative overflow-hidden" aria-labelledby="hero-title">
   <!-- Animated background particles -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none">
     <div class="particle particle-1"></div>
@@ -10,58 +10,64 @@
     <div class="particle particle-4"></div>
   </div>
   
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="grid gap-8 lg:gap-12 lg:grid-cols-2 lg:items-center hero-content">
+  <div class="container mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 relative z-10">
+    <div class="grid gap-6 xs:gap-8 md:gap-10 lg:gap-12 xl:gap-16 lg:grid-cols-2 lg:items-center hero-content">
       <!-- Content -->
-      <div class="space-y-8 animate-fade-in-up">
-        <div class="space-y-4">
-          <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-amber-900 leading-tight animate-slide-in-left">
+      <div class="space-y-6 xs:space-y-8 animate-fade-in-up">
+        <div class="space-y-3 xs:space-y-4">
+          <h1 id="hero-title" class="text-3xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-tight text-amber-900 leading-[1.1] xs:leading-tight animate-slide-in-left">
             Solidne wykończenia wnętrz
-            <span class="block text-amber-700 text-3xl md:text-4xl lg:text-5xl mt-2 animate-slide-in-left-delay">
+            <span class="block text-amber-700 text-2xl xs:text-3xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl mt-1 xs:mt-2 animate-slide-in-left-delay">
               z pasją do detali
             </span>
           </h1>
-          <h2 class="text-lg md:text-xl lg:text-2xl text-amber-800/80 leading-relaxed max-w-2xl animate-fade-in-delay">
+          <h2 class="text-base xs:text-lg sm:text-xl md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-amber-800/80 leading-relaxed max-w-2xl animate-fade-in-delay">
             Malowanie, układanie płytek i drobne remonty w Twoim mieszkaniu. 
             Profesjonalne usługi wykończeniowe z wieloletnim doświadczeniem.
           </h2>
         </div>
         
         <!-- Social Proof -->
-        <div class="flex items-center space-x-4 animate-fade-in-delay-2">
+        <div class="flex flex-col xs:flex-row items-start xs:items-center space-y-3 xs:space-y-0 xs:space-x-4 animate-fade-in-delay-2">
           <div class="flex -space-x-2">
-            <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-full border-2 border-white flex items-center justify-center text-white text-sm font-bold">
+            <div class="w-8 h-8 xs:w-10 xs:h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-full border-2 border-white flex items-center justify-center text-white text-xs xs:text-sm font-bold shadow-md">
               JS
             </div>
-            <div class="w-10 h-10 bg-gradient-to-br from-orange-600 to-red-500 rounded-full border-2 border-white flex items-center justify-center text-white text-sm font-bold">
+            <div class="w-8 h-8 xs:w-10 xs:h-10 bg-gradient-to-br from-orange-600 to-red-500 rounded-full border-2 border-white flex items-center justify-center text-white text-xs xs:text-sm font-bold shadow-md">
               MK
             </div>
-            <div class="w-10 h-10 bg-gradient-to-br from-amber-700 to-orange-600 rounded-full border-2 border-white flex items-center justify-center text-white text-sm font-bold">
+            <div class="w-8 h-8 xs:w-10 xs:h-10 bg-gradient-to-br from-amber-700 to-orange-600 rounded-full border-2 border-white flex items-center justify-center text-white text-xs xs:text-sm font-bold shadow-md">
               AW
             </div>
+            <div class="w-8 h-8 xs:w-10 xs:h-10 bg-gradient-to-br from-green-600 to-green-500 rounded-full border-2 border-white flex items-center justify-center text-white text-xs font-bold shadow-md">
+              +47
+            </div>
           </div>
-          <div class="text-sm text-amber-800">
-            <span class="font-semibold">50+ zadowolonych klientów</span>
-            <div class="flex items-center">
-              <span class="text-yellow-500">★★★★★</span>
-              <span class="ml-1 text-amber-700">4.9/5</span>
+          <div class="text-xs xs:text-sm">
+            <span class="font-semibold text-amber-900">50+ zadowolonych klientów</span>
+            <div class="flex items-center mt-1">
+              <span class="text-yellow-500 text-sm xs:text-base">★★★★★</span>
+              <span class="ml-1 text-amber-700 font-medium">4.9/5</span>
+              <span class="ml-2 text-amber-600 text-xs">(47 opinii)</span>
             </div>
           </div>
         </div>
         
         <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-delay-3">
+        <div class="flex flex-col sm:flex-row gap-3 xs:gap-4 animate-fade-in-delay-3">
           <a 
             href="#kontakt" 
-            class="cta-primary group inline-flex items-center justify-center bg-gradient-to-r from-amber-600 to-orange-500 text-cream-50 px-8 py-4 rounded-full text-lg font-medium hover:from-amber-700 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-amber-500/50 focus:scale-105"
+            class="cta-primary group inline-flex items-center justify-center bg-gradient-to-r from-amber-600 to-orange-500 text-cream-50 px-6 xs:px-8 py-3 xs:py-4 rounded-full text-base xs:text-lg font-medium hover:from-amber-700 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-amber-500/50 focus:scale-105 active:scale-95"
             aria-label="Skontaktuj się z nami w celu bezpłatnej wyceny"
+            role="button"
+            tabindex="0"
           >
-            <svg class="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 xs:w-5 xs:h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <span class="loading-text">Bezpłatna wycena</span>
-            <span class="loading-spinner hidden">
-              <svg class="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24">
+            <span class="loading-spinner hidden" aria-hidden="true">
+              <svg class="animate-spin w-4 h-4 xs:w-5 xs:h-5" fill="none" viewBox="0 0 24 24">
                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                 <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
               </svg>
@@ -69,10 +75,12 @@
           </a>
           <a 
             href="#uslugi" 
-            class="cta-secondary group inline-flex items-center justify-center border-2 border-amber-600 text-amber-800 px-8 py-4 rounded-full text-lg font-medium hover:bg-amber-100/70 hover:border-amber-700 hover:text-amber-900 transition-all duration-300 hover:shadow-md focus:outline-none focus:ring-4 focus:ring-amber-500/30"
+            class="cta-secondary group inline-flex items-center justify-center border-2 border-amber-600 text-amber-800 px-6 xs:px-8 py-3 xs:py-4 rounded-full text-base xs:text-lg font-medium hover:bg-amber-100/70 hover:border-amber-700 hover:text-amber-900 transition-all duration-300 hover:shadow-md focus:outline-none focus:ring-4 focus:ring-amber-500/30 active:scale-95"
             aria-label="Zobacz nasze usługi wykończeniowe"
+            role="button"
+            tabindex="0"
           >
-            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 xs:w-5 xs:h-5 mr-2 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             Zobacz usługi
@@ -80,40 +88,40 @@
         </div>
 
         <!-- Features -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 animate-fade-in-delay-4">
-          <div class="feature-card group flex items-center space-x-3 p-4 rounded-xl hover:bg-amber-50/50 transition-all duration-300 hover:scale-105 hover:shadow-md cursor-pointer">
-            <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:rotate-6 transition-all duration-300">
-              <svg class="w-5 h-5 text-cream-50 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-4 xs:gap-6 pt-6 xs:pt-8 animate-fade-in-delay-4">
+          <div class="feature-card group flex flex-col xs:flex-row items-start xs:items-center space-y-2 xs:space-y-0 xs:space-x-3 p-3 xs:p-4 rounded-xl hover:bg-amber-50/50 transition-all duration-300 hover:scale-105 hover:shadow-md cursor-pointer" tabindex="0" role="button" aria-label="15 lat doświadczenia w branży wykończeniowej">
+            <div class="w-8 h-8 xs:w-10 xs:h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:rotate-6 transition-all duration-300 flex-shrink-0">
+              <svg class="w-4 h-4 xs:w-5 xs:h-5 text-cream-50 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <div>
-              <div class="font-semibold text-amber-900 group-hover:text-amber-800 transition-colors duration-300">15+ lat doświadczenia</div>
-              <div class="text-sm text-amber-700 group-hover:text-amber-600 transition-colors duration-300">Sprawdzona jakość</div>
+            <div class="min-w-0">
+              <div class="font-semibold text-sm xs:text-base text-amber-900 group-hover:text-amber-800 transition-colors duration-300">15+ lat doświadczenia</div>
+              <div class="text-xs xs:text-sm text-amber-700 group-hover:text-amber-600 transition-colors duration-300">Sprawdzona jakość</div>
             </div>
           </div>
           
-          <div class="feature-card group flex items-center space-x-3 p-4 rounded-xl hover:bg-amber-50/50 transition-all duration-300 hover:scale-105 hover:shadow-md cursor-pointer">
-            <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:rotate-6 transition-all duration-300">
-              <svg class="w-5 h-5 text-cream-50 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="feature-card group flex flex-col xs:flex-row items-start xs:items-center space-y-2 xs:space-y-0 xs:space-x-3 p-3 xs:p-4 rounded-xl hover:bg-amber-50/50 transition-all duration-300 hover:scale-105 hover:shadow-md cursor-pointer" tabindex="0" role="button" aria-label="Gwarantujemy terminowość wykonania prac">
+            <div class="w-8 h-8 xs:w-10 xs:h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:rotate-6 transition-all duration-300 flex-shrink-0">
+              <svg class="w-4 h-4 xs:w-5 xs:h-5 text-cream-50 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
-            <div>
-              <div class="font-semibold text-amber-900 group-hover:text-amber-800 transition-colors duration-300">Terminowość</div>
-              <div class="text-sm text-amber-700 group-hover:text-amber-600 transition-colors duration-300">Dotrzymujemy terminów</div>
+            <div class="min-w-0">
+              <div class="font-semibold text-sm xs:text-base text-amber-900 group-hover:text-amber-800 transition-colors duration-300">Terminowość</div>
+              <div class="text-xs xs:text-sm text-amber-700 group-hover:text-amber-600 transition-colors duration-300">Dotrzymujemy terminów</div>
             </div>
           </div>
           
-          <div class="feature-card group flex items-center space-x-3 p-4 rounded-xl hover:bg-amber-50/50 transition-all duration-300 hover:scale-105 hover:shadow-md cursor-pointer">
-            <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:rotate-6 transition-all duration-300">
-              <svg class="w-5 h-5 text-cream-50 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="feature-card group flex flex-col xs:flex-row items-start xs:items-center space-y-2 xs:space-y-0 xs:space-x-3 p-3 xs:p-4 rounded-xl hover:bg-amber-50/50 transition-all duration-300 hover:scale-105 hover:shadow-md cursor-pointer col-span-1 xs:col-span-2 sm:col-span-1" tabindex="0" role="button" aria-label="Gwarancja na wszystkie wykonane prace">
+            <div class="w-8 h-8 xs:w-10 xs:h-10 bg-gradient-to-br from-amber-600 to-orange-500 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:rotate-6 transition-all duration-300 flex-shrink-0">
+              <svg class="w-4 h-4 xs:w-5 xs:h-5 text-cream-50 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
               </svg>
             </div>
-            <div>
-              <div class="font-semibold text-amber-900 group-hover:text-amber-800 transition-colors duration-300">Gwarancja</div>
-              <div class="text-sm text-amber-700 group-hover:text-amber-600 transition-colors duration-300">Na wszystkie prace</div>
+            <div class="min-w-0">
+              <div class="font-semibold text-sm xs:text-base text-amber-900 group-hover:text-amber-800 transition-colors duration-300">Gwarancja</div>
+              <div class="text-xs xs:text-sm text-amber-700 group-hover:text-amber-600 transition-colors duration-300">Na wszystkie prace</div>
             </div>
           </div>
         </div>
@@ -193,6 +201,156 @@
 </section>
 
 <style>
+  /* Custom cream colors */
+  .bg-cream-50 {
+    background-color: #fffbf0;
+  }
+  
+  .text-cream-50 {
+    color: #fffbf0;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Enhanced CSS Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation classes */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  .animate-fade-in-left {
+    animation: fadeInLeft 0.8s ease-out;
+  }
+  
+  .animate-fade-in-right {
+    animation: fadeInRight 0.8s ease-out;
+  }
+  
+  .animate-slide-in-left {
+    animation: fadeInLeft 0.6s ease-out;
+  }
+  
+  .animate-slide-in-left-delay {
+    animation: fadeInLeft 0.6s ease-out 0.2s both;
+  }
+  
+  .animate-fade-in-delay {
+    animation: fadeIn 0.8s ease-out 0.4s both;
+  }
+  
+  .animate-fade-in-delay-2 {
+    animation: fadeIn 0.8s ease-out 0.6s both;
+  }
+  
+  .animate-fade-in-delay-3 {
+    animation: fadeIn 0.8s ease-out 0.8s both;
+  }
+  
+  .animate-fade-in-delay-4 {
+    animation: fadeIn 0.8s ease-out 1.0s both;
+  }
+  
+  .animate-fade-in-delay-5 {
+    animation: fadeIn 0.8s ease-out 1.2s both;
+  }
+  
+  /* Floating animation for decorative elements */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float.delay-1000 {
+    animation-delay: 1s;
+  }
+  
+  .animate-float.delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animate-float.delay-3000 {
+    animation-delay: 3s;
+  }
+  
+  /* Pulse animation for background patterns */
+  @keyframes pulseSlow {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.7; }
+  }
+  
+  .animate-pulse-slow {
+    animation: pulseSlow 4s ease-in-out infinite;
+  }
+  
+  .animate-pulse-slow.delay-100 {
+    animation-delay: 0.1s;
+  }
+  
+  .animate-pulse-slow.delay-200 {
+    animation-delay: 0.2s;
+  }
+  
+  .animate-pulse-slow.delay-300 {
+    animation-delay: 0.3s;
+  }
+  
+  .animate-pulse-slow.delay-400 {
+    animation-delay: 0.4s;
+  }
+  
+  .animate-pulse-slow.delay-500 {
+    animation-delay: 0.5s;
+  }
+  
   /* Animated background particles */
   .particle {
     position: absolute;
@@ -253,36 +411,6 @@
     }
   }
   
-  /* Enhanced shadows */
-  .shadow-3xl {
-    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
-  }
-  
-  /* Enhanced animation delays */
-  .animate-slide-in-left-delay {
-    animation: slideInLeft 0.6s ease-out 0.2s both;
-  }
-  
-  .animate-fade-in-delay {
-    animation: fadeIn 0.8s ease-out 0.4s both;
-  }
-  
-  .animate-fade-in-delay-2 {
-    animation: fadeIn 0.8s ease-out 0.6s both;
-  }
-  
-  .animate-fade-in-delay-3 {
-    animation: fadeIn 0.8s ease-out 0.8s both;
-  }
-  
-  .animate-fade-in-delay-4 {
-    animation: fadeIn 0.8s ease-out 1.0s both;
-  }
-  
-  .animate-fade-in-delay-5 {
-    animation: fadeIn 0.8s ease-out 1.2s both;
-  }
-  
   /* Enhanced hover effects for CTA buttons */
   .cta-primary {
     position: relative;
@@ -302,6 +430,81 @@
   
   .cta-primary:hover::before {
     left: 100%;
+  }
+  
+  /* Feature card hover effects */
+  .feature-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(234, 88, 12, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0.75rem;
+  }
+  
+  .feature-card:hover::before {
+    opacity: 1;
+  }
+  
+  /* Loading animation for buttons */
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Enhanced shadows */
+  .shadow-3xl {
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Reduced motion for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-in-up,
+    .animate-fade-in-left,
+    .animate-fade-in-right,
+    .animate-slide-in-left,
+    .animate-slide-in-left-delay,
+    .animate-fade-in-delay,
+    .animate-fade-in-delay-2,
+    .animate-fade-in-delay-3,
+    .animate-fade-in-delay-4,
+    .animate-fade-in-delay-5,
+    .animate-float,
+    .animate-pulse-slow,
+    .particle {
+      animation: none;
+    }
+    
+    .cta-primary::before,
+    .feature-card::before {
+      display: none;
+    }
+  }
+  
+  /* Smooth scroll behavior for anchor links */
+  [href^="#"] {
+    scroll-behavior: smooth;
+  }
+  
+  /* Focus improvements for accessibility */
+  .cta-primary:focus,
+  .cta-secondary:focus {
+    outline: 2px solid #f59e0b;
+    outline-offset: 2px;
   }
 </style>
 
