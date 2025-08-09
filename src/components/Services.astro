@@ -1,91 +1,202 @@
 ---
 ---
 
-<section id="uslugi" class="py-16 lg:py-24 bg-gradient-to-br from-cream-50 via-amber-50/30 to-orange-50/20" aria-labelledby="uslugi-title">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <h2 id="uslugi-title" class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-amber-900 mb-4">
+<section id="uslugi" class="py-16 lg:py-24 bg-gradient-to-br from-cream-50 via-amber-50/30 to-orange-50/20 relative overflow-hidden" aria-labelledby="uslugi-title">
+  <!-- Background decoration -->
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute top-20 left-10 w-64 h-64 bg-amber-400 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-10 w-48 h-48 bg-orange-400 rounded-full blur-3xl"></div>
+  </div>
+  
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-16 animate-fade-in">
+ 
+      <h2 id="uslugi-title" class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-amber-900 mb-6 leading-tight">
         Co oferuję?
       </h2>
-      <p class="text-lg md:text-xl text-amber-800/80 max-w-2xl mx-auto leading-relaxed">
-        Profesjonalne usługi wykończeniowe z dbałością o każdy detal
+      <p class="text-lg md:text-xl text-amber-800/80 max-w-3xl mx-auto leading-relaxed">
+        Profesjonalne usługi wykończeniowe z dbałością o każdy detal. 
+        <span class="text-amber-900 font-semibold">Gwarancja jakości</span> i terminowej realizacji.
       </p>
     </div>
     
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      <article class="group bg-cream-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-200/40 hover:border-amber-300/60 transform hover:-translate-y-2">
-        <div class="w-16 h-16 bg-gradient-to-br from-amber-600 to-orange-500 rounded-2xl flex items-center justify-center shadow-md mb-6 group-hover:scale-110 transition-transform duration-300">
-          <svg class="w-8 h-8 text-cream-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-amber-900 mb-3 group-hover:text-amber-800 transition-colors">
-          Malowanie precyzyjne
-        </h3>
-        <p class="text-amber-800/70 leading-relaxed">
-          Profesjonalne malowanie ścian i sufitów z użyciem wysokiej jakości farb. Precyzyjne wykończenia i odświeżanie kolorów.
-        </p>
-        <div class="mt-4 flex items-center text-sm text-amber-700">
-          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-          </svg>
-          Gwarancja jakości
+    <div class="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 xl:gap-10">
+      <!-- Service 1: Malowanie -->
+      <article 
+        class="group service-card bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-amber-200/50 hover:border-amber-300/80 transform hover:-translate-y-3 hover:scale-[1.02] relative overflow-hidden"
+        role="region"
+        aria-labelledby="service-1-title"
+        tabindex="0"
+      >
+        <!-- Card number -->
+        <div class="absolute top-4 right-4 w-8 h-8 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center text-sm font-bold">01</div>
+        
+        <!-- Ripple effect -->
+        <div class="absolute inset-0 bg-gradient-to-br from-amber-400/0 to-orange-400/0 group-hover:from-amber-400/5 group-hover:to-orange-400/5 transition-all duration-500 rounded-3xl"></div>
+        
+        <div class="relative z-10">
+          <div class="w-16 h-16 bg-gradient-to-br from-amber-600 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 animate-pulse-subtle">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"></path>
+            </svg>
+          </div>
+          <h3 id="service-1-title" class="text-xl md:text-2xl font-bold text-amber-900 mb-4 group-hover:text-amber-800 transition-colors">
+            Malowanie precyzyjne
+          </h3>
+          <p class="text-amber-800/70 leading-relaxed mb-6 text-base">
+            Profesjonalne malowanie ścian i sufitów z użyciem wysokiej jakości farb. Precyzyjne wykończenia i odświeżanie kolorów w każdym pomieszczeniu.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-center text-sm text-amber-700 font-medium">
+              <svg class="w-4 h-4 mr-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Gwarancja jakości
+            </div>
+            <div class="flex items-center text-sm text-amber-700 font-medium">
+              <svg class="w-4 h-4 mr-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Szybka realizacja
+            </div>
+          </div>
         </div>
       </article>
 
-      <article class="group bg-cream-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-200/40 hover:border-amber-300/60 transform hover:-translate-y-2">
-        <div class="w-16 h-16 bg-gradient-to-br from-amber-600 to-orange-500 rounded-2xl flex items-center justify-center shadow-md mb-6 group-hover:scale-110 transition-transform duration-300">
-          <svg class="w-8 h-8 text-cream-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-amber-900 mb-3 group-hover:text-amber-800 transition-colors">
-          Układanie płytek
-        </h3>
-        <p class="text-amber-800/70 leading-relaxed">
-          Fachowe układanie płytek w kuchniach, łazienkach i innych pomieszczeniach. Precyzyjne dopasowania i trwałe wykończenia.
-        </p>
-        <div class="mt-4 flex items-center text-sm text-amber-700">
-          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-          Terminowa realizacja
+      <!-- Service 2: Płytki -->
+      <article 
+        class="group service-card bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-amber-200/50 hover:border-amber-300/80 transform hover:-translate-y-3 hover:scale-[1.02] relative overflow-hidden"
+        role="region"
+        aria-labelledby="service-2-title"
+        tabindex="0"
+      >
+        <!-- Card number -->
+        <div class="absolute top-4 right-4 w-8 h-8 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center text-sm font-bold">02</div>
+        
+        <!-- Ripple effect -->
+        <div class="absolute inset-0 bg-gradient-to-br from-amber-400/0 to-orange-400/0 group-hover:from-amber-400/5 group-hover:to-orange-400/5 transition-all duration-500 rounded-3xl"></div>
+        
+        <div class="relative z-10">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-500 rounded-2xl flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 animate-pulse-subtle">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 id="service-2-title" class="text-xl md:text-2xl font-bold text-amber-900 mb-4 group-hover:text-amber-800 transition-colors">
+            Układanie płytek
+          </h3>
+          <p class="text-amber-800/70 leading-relaxed mb-6 text-base">
+            Fachowe układanie płytek w kuchniach, łazienkach i innych pomieszczeniach. Precyzyjne dopasowania i trwałe wykończenia na lata.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-center text-sm text-amber-700 font-medium">
+              <svg class="w-4 h-4 mr-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Terminowa realizacja
+            </div>
+            <div class="flex items-center text-sm text-amber-700 font-medium">
+              <svg class="w-4 h-4 mr-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Materiały premium
+            </div>
+          </div>
         </div>
       </article>
 
-      <article class="group bg-cream-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-200/40 hover:border-amber-300/60 transform hover:-translate-y-2 sm:col-span-2 lg:col-span-1">
-        <div class="w-16 h-16 bg-gradient-to-br from-amber-600 to-orange-500 rounded-2xl flex items-center justify-center shadow-md mb-6 group-hover:scale-110 transition-transform duration-300">
-          <svg class="w-8 h-8 text-cream-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-amber-900 mb-3 group-hover:text-amber-800 transition-colors">
-          Drobne prace wykończeniowe
-        </h3>
-        <p class="text-amber-800/70 leading-relaxed">
-          Montaż listew, drobne naprawy i wszystkie prace wykończeniowe. Kompleksowe podejście do detali w Twoim wnętrzu.
-        </p>
-        <div class="mt-4 flex items-center text-sm text-amber-700">
-          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-          </svg>
-          Dbałość o detale
+      <!-- Service 3: Drobne prace -->
+      <article 
+        class="group service-card bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-amber-200/50 hover:border-amber-300/80 transform hover:-translate-y-3 hover:scale-[1.02] relative overflow-hidden md:col-span-2 lg:col-span-1"
+        role="region"
+        aria-labelledby="service-3-title"
+        tabindex="0"
+      >
+        <!-- Card number -->
+        <div class="absolute top-4 right-4 w-8 h-8 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center text-sm font-bold">03</div>
+        
+        <!-- Ripple effect -->
+        <div class="absolute inset-0 bg-gradient-to-br from-amber-400/0 to-orange-400/0 group-hover:from-amber-400/5 group-hover:to-orange-400/5 transition-all duration-500 rounded-3xl"></div>
+        
+        <div class="relative z-10">
+          <div class="w-16 h-16 bg-gradient-to-br from-emerald-600 to-teal-500 rounded-2xl flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 animate-pulse-subtle">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <h3 id="service-3-title" class="text-xl md:text-2xl font-bold text-amber-900 mb-4 group-hover:text-amber-800 transition-colors">
+            Drobne prace wykończeniowe
+          </h3>
+          <p class="text-amber-800/70 leading-relaxed mb-6 text-base">
+            Montaż listew, drobne naprawy i wszystkie prace wykończeniowe. Kompleksowe podejście do detali w Twoim wnętrzu.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-center text-sm text-amber-700 font-medium">
+              <svg class="w-4 h-4 mr-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Dbałość o detale
+            </div>
+            <div class="flex items-center text-sm text-amber-700 font-medium">
+              <svg class="w-4 h-4 mr-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+              Kompleksowość
+            </div>
+          </div>
         </div>
       </article>
     </div>
 
     <!-- Call to action -->
-    <div class="text-center mt-12">
-      <a 
-        href="#kontakt" 
-        class="inline-flex items-center justify-center bg-gradient-to-r from-amber-600 to-orange-500 text-cream-50 px-8 py-4 rounded-full text-lg font-medium hover:from-amber-700 hover:to-orange-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
-      >
-        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-        </svg>
-        Porozmawiajmy o Twoim projekcie
-      </a>
+    <div class="text-center mt-16 animate-fade-in-up">
+      <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-3xl p-8 md:p-12 border border-amber-200/50 shadow-lg">
+        <h3 class="text-2xl md:text-3xl font-bold text-amber-900 mb-4">
+          Gotowy na współpracę?
+        </h3>
+        <p class="text-amber-800/70 text-lg mb-8 max-w-2xl mx-auto">
+          Skontaktuj się ze mną i omówmy szczegóły Twojego projektu. Bezpłatna wycena i profesjonalne doradztwo.
+        </p>
+        <a 
+          href="#kontakt" 
+          class="group inline-flex items-center justify-center bg-gradient-to-r from-amber-600 to-orange-500 text-white px-10 py-5 rounded-full text-lg font-semibold hover:from-amber-700 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-amber-300/50 relative overflow-hidden"
+          aria-label="Przejdź do sekcji kontakt"
+        >
+          <!-- Button shine effect -->
+          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 group-hover:translate-x-full transition-transform duration-1000"></div>
+          
+          <svg class="w-5 h-5 mr-3 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+          </svg>
+          <span class="relative z-10">Porozmawiajmy o Twoim projekcie</span>
+          <svg class="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+        
+        <!-- Social proof -->
+        <div class="mt-8 flex items-center justify-center space-x-8 text-amber-700/60">
+          <div class="flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="text-sm font-medium">Bezpłatna wycena</span>
+          </div>
+          <div class="flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span class="text-sm font-medium">Szybka realizacja</span>
+          </div>
+          <div class="flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+            <span class="text-sm font-medium">Gwarancja jakości</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -100,13 +211,164 @@
     color: #fffbf0;
   }
   
-  /* Hover animations */
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-5px); }
+  /* Enhanced animations */
+  @keyframes fade-in {
+    from { 
+      opacity: 0; 
+      transform: translateY(20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
   }
   
-  .group:hover .group-hover\:animate-float {
-    animation: float 2s ease-in-out infinite;
+  @keyframes fade-in-up {
+    from { 
+      opacity: 0; 
+      transform: translateY(40px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  
+  @keyframes pulse-subtle {
+    0%, 100% { 
+      transform: scale(1); 
+      box-shadow: 0 10px 25px rgba(245, 158, 11, 0.2);
+    }
+    50% { 
+      transform: scale(1.02); 
+      box-shadow: 0 15px 35px rgba(245, 158, 11, 0.3);
+    }
+  }
+  
+  @keyframes stagger-in {
+    from {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 1s ease-out forwards;
+  }
+  
+  .animate-pulse-subtle {
+    animation: pulse-subtle 3s ease-in-out infinite;
+  }
+  
+  /* Service cards staggered animation */
+  .service-card:nth-child(1) {
+    animation: stagger-in 0.6s ease-out 0.1s both;
+  }
+  
+  .service-card:nth-child(2) {
+    animation: stagger-in 0.6s ease-out 0.2s both;
+  }
+  
+  .service-card:nth-child(3) {
+    animation: stagger-in 0.6s ease-out 0.3s both;
+  }
+  
+  /* Enhanced focus states */
+  .service-card:focus {
+    outline: none;
+    ring: 3px;
+    ring-color: rgba(245, 158, 11, 0.5);
+    ring-offset: 2px;
+    transform: translateY(-4px) scale(1.02);
+  }
+  
+  /* Ripple effect enhancement */
+  .group:hover .group-hover\:animate-bounce {
+    animation: bounce 1s ease-in-out infinite;
+  }
+  
+  /* Button focus enhancement */
+  button:focus, a:focus {
+    outline: none;
+  }
+  
+  /* Backdrop blur support */
+  @supports (backdrop-filter: blur(10px)) {
+    .backdrop-blur-sm {
+      backdrop-filter: blur(4px);
+    }
+  }
+  
+  /* Scroll-triggered animations */
+  @media (prefers-reduced-motion: no-preference) {
+    .service-card {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    
+    .service-card.in-view {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.6s ease-out;
+    }
+  }
+  
+  /* Mobile optimizations */
+  @media (max-width: 640px) {
+    .service-card {
+      padding: 1.5rem;
+    }
+    
+    .service-card h3 {
+      font-size: 1.125rem;
+    }
+  }
+  
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .service-card {
+      border-width: 2px;
+      border-color: currentColor;
+    }
+  }
+  
+  /* Print styles */
+  @media print {
+    .service-card {
+      break-inside: avoid;
+      box-shadow: none;
+      border: 1px solid #000;
+    }
   }
 </style>
+
+<script>
+  // Intersection Observer for scroll animations
+  if (typeof window !== 'undefined') {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, observerOptions);
+
+    // Observe service cards
+    document.querySelectorAll('.service-card').forEach((card) => {
+      observer.observe(card);
+    });
+  }
+</script>
