@@ -5,6 +5,8 @@
   id="o-mnie" 
   class="py-16 lg:py-24 bg-gradient-to-br from-cream-50 via-amber-50/40 to-orange-50/20 relative overflow-hidden" 
   aria-labelledby="o-mnie-title"
+  itemscope
+  itemtype="https://schema.org/AboutPage"
 >
   <!-- Simplified animated background -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
@@ -23,16 +25,26 @@
         <span>Poznaj naszą historię</span>
       </div>
       
-      <h2 id="o-mnie-title" class="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-amber-900 leading-tight mb-4">
-        Poznaj
-        <span class="block bg-gradient-to-r from-amber-700 to-orange-600 bg-clip-text text-transparent">
-          Salko Works
+      <h2 
+        id="o-mnie-title" 
+        class="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-amber-900 leading-tight mb-4"
+        itemprop="headline"
+      >
+        O firmie
+        <span 
+          class="block bg-gradient-to-r from-amber-700 to-orange-600 bg-clip-text text-transparent"
+          itemprop="alternativeHeadline"
+        >
+          SalkoWorks
         </span>
       </h2>
       
-      <p class="text-lg xs:text-xl text-amber-800/80 leading-relaxed max-w-3xl mx-auto">
+      <p 
+        class="text-lg xs:text-xl text-amber-800/80 leading-relaxed max-w-3xl mx-auto"
+        itemprop="description"
+      >
         Młoda firma z dużymi ambicjami i pasją do tworzenia pięknych wnętrz. 
-        Każdy projekt traktujemy jako inwestycję w przyszłość.
+        Każdy projekt traktujemy jako inwestycję w przyszłość naszych klientów.
       </p>
     </div>
 

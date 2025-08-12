@@ -1,22 +1,190 @@
 ---
 import '../styles/global.css'
+
+interface Props {
+	title?: string;
+	description?: string;
+	image?: string;
+	url?: string;
+}
+
+const { 
+	title = "SalkoWorks - Profesjonalne Wykończenia Wnętrz | Malowanie, Płytki, Remonty",
+	description = "🎨 Profesjonalne wykończenia wnętrz w najlepszych cenach! ✨ Malowanie, układanie płytek, drobne remonty. 📞 Bezpłatna wycena. ⭐ 15+ lat doświadczenia. Zadzwoń już dziś!",
+	image = "/social-preview.jpg",
+	url = "https://salkoworks.pl"
+} = Astro.props;
+
+const fullTitle = title;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? url);
 ---
 
 <!doctype html>
 <html lang="pl">
 	<head>
+		<!-- Podstawowe meta tagi -->
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Wykończenia wnętrz – landing</title>
-
+		
+		<!-- SEO Meta tagi -->
+		<title>{fullTitle}</title>
+		<meta name="description" content={description} />
+		<meta name="keywords" content="wykończenia wnętrz, malowanie ścian, układanie płytek, remonty mieszkań, wykończeniówka, malarz, glazurnik, płytki łazienkowe, malowanie pokoi, remonty kuchni, remonty łazienek, usługi remontowe, fachowcy, gwarancja, terminowość, Warszawa, Mazowieckie" />
+		<meta name="author" content="SalkoWorks" />
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+		<meta name="language" content="Polish" />
+		<meta name="revisit-after" content="7 days" />
+		
+		<!-- Canonical URL -->
+		<link rel="canonical" href={canonicalURL} />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:title" content={fullTitle} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={image} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:locale" content="pl_PL" />
+		<meta property="og:site_name" content="SalkoWorks" />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={canonicalURL} />
+		<meta property="twitter:title" content={fullTitle} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={image} />
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f59e0b" />
+		<meta name="msapplication-TileColor" content="#f59e0b" />
+		<meta name="theme-color" content="#f59e0b" />
+		
+		<!-- PWA Manifest -->
+		<link rel="manifest" href="/manifest.json" />
+		
+		<!-- Preconnect for performance -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+		
+		<!-- JSON-LD Structured Data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "SalkoWorks",
+			"image": "https://salkoworks.pl/logo.jpg",
+			"@id": "https://salkoworks.pl",
+			"url": "https://salkoworks.pl",
+			"telephone": "+48123123123",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "ul. Przykładowa 123",
+				"addressLocality": "Warszawa",
+				"postalCode": "00-001",
+				"addressCountry": "PL"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": 52.2297,
+				"longitude": 21.0122
+			},
+			"openingHoursSpecification": [
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+					"opens": "08:00",
+					"closes": "18:00"
+				},
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": "Saturday",
+					"opens": "09:00",
+					"closes": "15:00"
+				}
+			],
+			"sameAs": [
+				"https://www.facebook.com/salkoworks",
+				"https://www.instagram.com/salkoworks"
+			],
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "4.9",
+				"reviewCount": "47"
+			},
+			"priceRange": "$$",
+			"description": "Profesjonalne wykończenia wnętrz - malowanie, układanie płytek, drobne remonty. Gwarancja jakości i terminowości.",
+			"serviceArea": {
+				"@type": "GeoCircle",
+				"geoMidpoint": {
+					"@type": "GeoCoordinates",
+					"latitude": 52.2297,
+					"longitude": 21.0122
+				},
+				"geoRadius": "50000"
+			},
+			"makesOffer": [
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Malowanie precyzyjne",
+						"description": "Profesjonalne malowanie ścian i sufitów z użyciem wysokiej jakości farb"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Układanie płytek",
+						"description": "Fachowe układanie płytek w kuchniach, łazienkach i innych pomieszczeniach"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Drobne prace wykończeniowe",
+						"description": "Montaż listew, drobne naprawy i wszystkie prace wykończeniowe"
+					}
+				}
+			]
+		}
+		</script>
+		
+		<!-- Additional structured data for website -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": "SalkoWorks",
+			"url": "https://salkoworks.pl",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": "https://salkoworks.pl/search?q={search_term_string}",
+				"query-input": "required name=search_term_string"
+			}
+		}
+		</script>
 	</head>
 	<body class="min-h-dvh antialiased">
 		<slot />
+		
+		<!-- Google Analytics (placeholder) -->
+		<!-- 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'GA_MEASUREMENT_ID');
+		</script>
+		-->
 	</body>
 </html>
 

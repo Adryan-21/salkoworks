@@ -1,0 +1,61 @@
+{
+  "name": "SalkoWorks - Profesjonalne Wykończenia Wnętrz",
+  "short_name": "SalkoWorks",
+  "description": "Profesjonalne wykończenia wnętrz - malowanie, układanie płytek, drobne remonty. Bezpłatna wycena i gwarancja jakości.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#f59e0b",
+  "background_color": "#fffbf0",
+  "lang": "pl",
+  "dir": "ltr",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Bezpłatna wycena",
+      "short_name": "Wycena",
+      "description": "Skontaktuj się z nami w celu bezpłatnej wyceny",
+      "url": "/#kontakt",
+      "icons": [
+        {
+          "src": "/shortcut-contact.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Nasze usługi",
+      "short_name": "Usługi",
+      "description": "Zobacz nasze usługi wykończeniowe",
+      "url": "/#uslugi",
+      "icons": [
+        {
+          "src": "/shortcut-services.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

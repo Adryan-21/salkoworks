@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Priorytetowe strony
+Allow: /#home
+Allow: /#uslugi
+Allow: /#o-mnie
+Allow: /#kontakt
+
+# Blokuj niepotrzebne pliki
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://salkoworks.pl/sitemap.xml
+
+# Crawl-delay dla botów
+Crawl-delay: 1
